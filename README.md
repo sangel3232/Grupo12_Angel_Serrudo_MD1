@@ -102,7 +102,7 @@ etl-weatherstack/
 
 ##  Autor
 
-Tu Nombre - Ingeniería de Sistemas - CORHUILA
+Sergio Luis Angel Romero - Ingeniería de Sistemas - CORHUILA
 
 ##  Licencia
 
