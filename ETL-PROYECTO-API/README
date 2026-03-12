@@ -1,1 +1,85 @@
+# 🍩 Simpsons Data Platform
 
+Proyecto de ingeniería de datos basado en la API de Los Simpsons.  
+El objetivo es construir un pipeline completo de datos que extrae información del universo de Los Simpsons y permite realizar análisis exploratorio, visualización y modelos de machine learning.
+
+## 📊 Dataset
+
+Datos obtenidos desde:
+
+https://thesimpsonsapi.com/
+
+Incluye información sobre:
+
+- 1180+ personajes
+- 700+ episodios
+- frases icónicas
+
+## 🏗 Arquitectura del proyecto
+
+API Simpsons  
+↓  
+ETL Python  
+↓  
+PostgreSQL Data Warehouse  
+↓  
+Dashboard Streamlit  
+↓  
+Machine Learning  
+
+## 🧰 Tecnologías utilizadas
+
+Python  
+PostgreSQL  
+SQLAlchemy  
+Docker  
+Streamlit  
+Pandas  
+Scikit-learn  
+Jupyter Notebook  
+
+## 📂 Estructura del proyecto
+
+simpsons-data-platform/
+
+database/ → conexión y modelos  
+etl/ → pipeline ETL  
+dashboards/ → visualización  
+ml/ → modelos de machine learning  
+data/ → datos procesados  
+logs/ → logs del ETL  
+
+## 🚀 Ejecución del proyecto
+
+1 Instalar dependencias
+
+pip install -r requirements.txt
+
+2 Ejecutar ETL
+
+python run_etl.py
+
+3 Ejecutar dashboard
+
+streamlit run dashboards/streamlit_app.py
+
+## 📊 Ejemplos de análisis
+
+- personajes por género
+- ocupaciones más comunes
+- análisis de frases
+- clustering de personajes
+
+## 🧠 Modelos implementados
+
+Clustering de personajes con KMeans  
+Análisis de frases con NLP  
+Predicción de popularidad de personajes  
+
+## 🐳 Docker
+
+docker-compose up --build
+
+## 👨‍💻 Sergio Luis Angel Romero 
+
+Proyecto de portafolio de Data Engineering / Data Science
