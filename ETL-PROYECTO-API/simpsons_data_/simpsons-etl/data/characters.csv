@@ -1,0 +1,1183 @@
+character_id,name,gender,occupation,status
+1,Homer Simpson,Male,Safety Inspector,Alive
+2,Marge Simpson,Female,Unemployed,Alive
+3,Bart Simpson,Male,Student at Springfield Elementary School,Alive
+4,Lisa Simpson,Female,"Student at Springfield Elementary School, CTU Agent, Hall-monitor, Member of PETA",Alive
+5,Maggie Simpson,Female,Unknown,Alive
+6,Abe Simpson II,Male,Retired,Alive
+7,Patty Bouvier,Female,Springfield DMV Employee,Alive
+8,Selma Bouvier,Female,Employee of Department of Motor Vehicles,Alive
+9,Ned Flanders,Male,The Leftorium (formerly),Alive
+10,Maude Flanders,Female,Housewife (former),Deceased
+11,Rod Flanders,Male,Student at Springfield Elementary School,Alive
+12,Todd Flanders,Male,Student at Springfield Elementary SchoolStudent at a religious private school (formerly),Alive
+13,Charles Montgomery Burns,Male,Owner & Director of the Springfield Nuclear Power Plant,Alive
+14,"Waylon Smithers, Jr.",Male,Assistant to Mr. Burns,Alive
+15,Krusty the Clown,Male,Television personality,Alive
+16,Moe Szyslak,Male,Bartender and Owner of Moe's Tavern,Alive
+17,Apu Nahasapeemapetilon,Male,Owner of the Kwik-E-Mart,Alive
+18,Seymour Skinner,Male,Principal of Springfield Elementary School,Alive
+19,Gary Chalmers,Male,Superintendent of Springfield Elementary School,Alive
+20,Edna Krabappel,Female,Fourth grade teacher at Springfield Elementary School (formerly),Deceased
+21,Otto Mann,Male,School bus driver,Alive
+22,Milhouse Van Houten,Male,Student at Springfield Elementary,Alive
+23,Luann Van Houten,Female,Housewife,Alive
+24,Kirk Van Houten,Male,Unemployed,Alive
+25,Ralph Wiggum,Male,Student at Springfield Elementary School,Alive
+26,Barney Gumble,Male,Helicopter pilot,Alive
+27,Carl Carlson,Male,Safety Operations Supervisor at the Springfield Nuclear Power Plant,Alive
+28,Lenny Leonard,Male,Technical Supervisor at the Springfield Nuclear Power Plant,Alive
+29,Clancy Wiggum,Male,Chief of the Springfield Police Department,Alive
+30,Sarah Wiggum,Female,Housewife,Alive
+31,Julius Hibbert,Male,Doctor at Springfield General Hospital,Alive
+32,Lou,Male,Police Sergeant,Alive
+33,"Jonathan Frink, Jr.",Male,Professor,Alive
+34,Professor Frink's son,Male,Professor Frink's Inventions,Alive
+35,Robert Terwilliger,Male,Criminal Mastermind,Alive
+36,"Martin Prince, Jr.",Male,Student at Springfield Elementary School.,Alive
+37,Nelson Muntz,Male,Student and Bully at Springfield Elementary,Alive
+38,Jimbo Jones,Male,School Bully,Alive
+39,Kearney Zzyzwicz,Male,School student,Alive
+40,Dolph Starbeam,Male,School bully,Alive
+41,Stu Discothèque,Male,Owner of Stu's DiscoSea Captain (formerly),Alive
+42,Joe Quimby,Male,Mayor of Springfield,Alive
+43,Fat Tony,Male,Mob boss,Deceased
+44,Louie (mafia),Male,Mobster,Alive
+45,Melvin Van Horne,Male,Children's entertainer,Alive
+46,Comic Book Guy,Male,Owner of The Android's Dungeon & Baseball Card Shop,Alive
+47,Kent Brockman,Male,Channel 6 anchorman,Alive
+48,Groundskeeper Willie,Male,Groundskeeper and Janitor at Springfield Elementary School,Alive
+49,Cletus Spuckler,Male,Farmer,Alive
+50,Brandine Spuckler,Female,Farmer,Alive
+51,Dr. Nick,Male,Fraudulent Doctor,Alive
+52,Elizabeth Hoover,Female,Teacher at Springfield Elementary School,Alive
+53,Mona Simpson,Female,Political activist (Formerly),Deceased
+54,Troy McClure,Male,Actor,Alive
+55,Timothy Lovejoy Jr.,Male,Reverend of the First Church of Springfield,Alive
+56,Helen Lovejoy,Female,Housewife,Alive
+57,Jessica Lovejoy,Female,Student,Alive
+58,Snake Jailbird,Male,Criminal,Alive
+59,Eddie,Male,Police officer,Alive
+60,Kodos,Female,Interstellar invader,Alive
+61,Duffman,Male,Mascot for Duff Beer,Alive
+62,Sherri and Terri,Female,Students at Springfield Elementary School,Alive
+63,Jasper Beardsley,Male,Retired,Alive
+64,Jacqueline Bouvier,Female,Retired,Alive
+65,Gil Gunderson,Male,Various,Alive
+66,Herman Hermann,Male,Owner of Herman's Military Antiques,Alive
+67,Artie Ziff,Male,Owner of Ziffcorp (former),Alive
+68,Lionel Hutz,Male,LawyerRealtorEstate ExecutorShoe Repairer,Alive
+69,Jeremy Freedman,Male,Various,Alive
+70,Mindy Simmons,Female,Employee at SNPP (Fired),Alive
+71,Lindsey Naegle,Female,Various,Alive
+72,Agnes Skinner,Female,Retired,Alive
+73,Larry Dalrymple,Male,Unknown,Deceased
+74,Mrs. Muntz,Female,Classy Girls Strip Club Pole Dancer,Alive
+75,Janey Powell,Female,Student,Alive
+76,Kyle Williams,Male,Student,Alive
+77,Hans Moleman,Male,Various,Alive
+78,Marvin Monroe,Male,Psychologist,Alive
+79,Jenda,Female,High school student,Alive
+80,Pedro Chespirito,Male,Actor/TV Personality,Alive
+81,Rainier Wolfcastle,Male,Actor,Alive
+82,Frank Grimes,Male,Nuclear Power Plant employee (Sector 7-G) (formerly),Deceased
+83,Blue-Haired Lawyer,Male,Lawyer,Alive
+84,Richard Texan,Male,Business OwnerFormer Senator,Alive
+85,Charlie (SNPP),Male,Dangerous Emissions Supervisor at the Springfield Nuclear Power Plant.,Alive
+86,Manjula Nahasapeemapetilon,Female,HousewifePart-time Kwik-E-Mart employee,Alive
+87,Wendell Borton,Male,Fourth grade student at Springfield Elementary School,Alive
+88,Laura Powers,Female,Babysitter,Alive
+89,Grandpa Van Houten,Male,Retired,Alive
+90,Eleanor Abernathy,Female,"Taking care of cats, Doctor (formerly), Lawyer (formerly)",Alive
+91,Lurleen Lumpkin,Female,Country MusicianBarmaid,Alive
+92,Jesus Christ,Male,Son of God,Alive
+93,Rex Banner,Male,Replacement Chief of PoliceUnited States Treasury Agent,Unknown
+94,Wally Kogen,Male,Travel Agent,Unknown
+95,L.T. Smash,Male,LieutenantManager of the Party PosseNavy recruiter,Alive
+96,Vittorio DiMaggio,Male,Mob boss,Alive
+97,Kang,Male,Interstellar invader,Alive
+98,Richard,Male,Student,Alive
+99,Harlan Dondelinger,Male,Principal of Springfield High School,Alive
+100,Alice Glick,Female,Church Organist,Deceased
+101,Chester J. Lampwick,Male,Cartoonist,Alive
+102,Terri Mackleberry,Female,Student,Alive
+103,Sherri Mackleberry,Female,Unknown,Alive
+104,Ruth Powers,Female,Home-maker,Alive
+105,Stacy Lovell,Female,EntrepreneurCreator of Malibu Stacy,Alive
+106,Beatrice Simmons,Female,Retired,Deceased
+107,Chuck Berger,Male,2nd Grade Student at Springfield Elementary School,Alive
+108,Lewis Clark,Male,Student,Alive
+109,Alaska Nebraska,Female,Singer/Actress,Alive
+110,Sophie Krustofsky,Female,Student,Alive
+111,Nikki McKenna,Female,Student,Alive
+112,Sam (barfly),Male,Target store employee,Alive
+113,Martha Quimby,Female,La Maison Derrière (Former),Alive
+114,Johnny Tightlips,Male,Mobster,Alive
+115,Eddie Muntz,Male,Former Circus Attraction,Alive
+116,Shauna Chalmers,Female,Manager at Smart TykesKrusty Burger employee (formerly)Mother Hubbard's Sandwich Cupboard employee (formerly)Marijuana DealerStudent of Springfield High School,Alive
+117,Rachel Jordan,Female,Lead singer of Kovenant,Alive
+118,Gerald Samson,Male,Unknown,Alive
+119,Michael D'Amico,Male,Student,Alive
+120,Bernice Hibbert,Female,Housewife,Alive
+121,Cookie Kwan,Female,Realtor,Alive
+122,Richard Nixon,Male,U.S. President (former),Deceased
+123,Roger Meyers Jr.,Male,Chairman of I&S Studios,Alive
+124,Seymour Skinner (real),Male,Sergeant during the Vietnam War,Alive
+125,Doug (nerd),Male,College Student,Alive
+126,Üter Zörker,Male,Student at Springfield Elementary School,Alive
+127,George Washington,Male,Former U.S. President and Former Surveyor,Deceased
+128,Kevin (Stealing First Base),Male,4th Grade Student at Springfield Elementary School,Alive
+129,Jebediah Springfield,Male,Founder of Springfield/Pirate/Murderer,Deceased
+130,Matt Groening,Male,Creator of Futurama & Life in Hell,Alive
+131,Lucille Botzcowski,Female,Criminal,Alive
+132,Bill Clinton,Male,Former President of the United States,Alive
+133,Dewey Largo,Male,"Music Teacher,Worker at Starving Teachers Moving Co.",Alive
+134,Allison Taylor,Female,Student,Alive
+135,Darcy,Female,High school student,Alive
+136,Hank Scorpio,Male,Owner of Globex Corporation/Supervillain,Alive
+137,Sanjay Nahasapeemapetilon,Male,Sales Clerk at the Kwik-E-Mart,Alive
+138,"Nedward Flanders, Sr.",Male,Retired,Alive
+139,Bartman (character),Unknown,Unknown,Unknown
+140,Hugo Simpson II,Male,Student,Alive
+141,Horatio McCallister,Male,EntrepreneurPeriscope operator,Alive
+142,Gino Terwilliger,Male,Murderer,Alive
+143,Librarian,Female,Second grade teacher,Alive
+144,Snowball V,Unknown,Unknown,Alive
+145,Black hole aliens,Male,Unknown,Alive
+146,Remus Krupp,Male,Unknown,Alive
+147,Helen Feesh,Female,Organ player for the First Church of Springfield,Alive
+148,Jeremy's Girlfriend (couch gag),Female,Unknown,Alive
+149,Wainwright Montgomery Burns,Male,Plantation Slave Owner during the Antebellum South. (1860 - 1865),Deceased
+150,Crystal Meth Spuckler,Female,Former star of The Krusty the Clown Show,Alive
+151,Pie Man,Unknown,Superhero,Unknown
+152,Anastasia,Unknown,Unknown,Deceased
+153,Mexican Duffman,Male,Advertiser for Duff Beer,Alive
+154,Anoop Nahasapeemapetilon,Male,Unknown,Alive
+155,Gloria's Husband,Male,Unknown,Alive
+156,Clancy Bouvier,Male,Navy sailor (formerly),Deceased
+157,Jeremy (network executive),Male,Network executive (formerly),Alive
+158,Jimmy the Snitch,Male,Mafia associate unknown undercover,Unknown
+159,Springfield bears,Unknown,Unknown,Unknown
+160,Dr. Zitsofsky,Male,Unknown,Unknown
+161,Mike's Student 3,Male,5th Grade student at Springfield Elementary School,Alive
+162,Prius Albertson,Male,Unknown,Alive
+163,Lady Gaga,Female,Singer,Alive
+164,Strongman Homer,Male,Unknown,Unknown
+165,Mr. Burns' Security Guards,Male,Security guards,Alive
+166,Mr. Mitchell,Male,Unknown,Alive
+167,Maw Spuckler,Female,Unknown,Alive
+168,Stretch Dude,Unknown,Unknown,Unknown
+169,"Nelson Muntz, Jr.",Male,Grade School Student,Alive
+170,Cayman Islands banker,Male,Banker,Alive
+171,Renee,Female,Florist,Alive
+172,Ralph (Moaning Lisa),Male,Student at Springfield Elementary School,Alive
+173,Ginger Flanders,Female,Waitress,Alive
+174,Old Lady Unnamed with Pink dress,Female,Unknown,Alive
+175,Paris Texan,Female,Unknown,Alive
+176,Scratchy,Unknown,Unknown,Fictional
+177,Chet Simpson,Male,Owner of an unsuccessful shrimp company,Alive
+178,Francine Rhenquist,Female,Student at Springfield Elementary School,Alive
+179,Female Brown have a Ring and Light Green Dress,Female,History,Alive
+180,Jack Lassen,Male,Teacher (formerly)Prison Guard,Alive
+181,John Mulaney,Unknown,Unknown,Unknown
+182,The Parson,Male,Leader of the Presbylutheran faith practiced in Springfield,Alive
+183,International Harvester Spuckler,Male,Homeschooled studentFormer star of The Krusty the Clown Show,Alive
+184,Garth Motherloving,Male,CEO of Motherloving Sweets and Sugar Company,Alive
+185,Michael Moore ,Male,Filmmaker,Alive
+186,The MudSlinger,Unknown,Unknown,Unknown
+187,Ref,Male,Non-playable boxing referee in Super Slugfest,Unknown
+188,Whitney Spuckler,Female,Unknown,Alive
+189,The Devil,Male,Ruler of Hell,Alive
+190,Grand Pumpkin,Male,The Grand (Halloween) Pumpkin,Deceased
+191,Plopper,Unknown,Unknown,Alive
+192,Constance Harm,Male,Judge,Alive
+193,Professor X,Male,Leader of the X-Men,Fictional
+194,Professor Hubert J. Farnsworth,Male,Unknown,Alive
+195,Richard's Mother,Female,Unknown,Alive
+196,Baron Von Kiss-A-Lot,Male,Baron,Alive
+197,Incest Spuckler,Male,Homeschooled studentFormer star of The Krusty the Clown Show,Alive
+198,Audrey McConnell's Student 2,Male,Student at Springfield Elementary School,Alive
+199,H.K. Duff,Male,Owner of the Springfield IsotopesCEO of the Duff BreweryChair of Duff Industries,Alive
+200,J. Loren Pryor,Male,School District PsychologistGuidance counselor,Alive
+201,Lisa The Conjurer,Female,Unknown,Unknown
+202,Barbara Lelavinsky,Female,TV personalityActress,Alive
+203,Menthol Moose,Male,Mascot for Laramie Cigarettes,Alive
+204,Itchy,Unknown,Unknown,Fictional
+205,Barack Obama,Male,Former President of the United States,Alive
+206,Larry King,Male,TV host,Deceased
+207,Cupcake Kid,Unknown,Unknown,Unknown
+208,Dr. Brentano,Male,Child psychologist  Marriage counselor,Alive
+209,June Bellamy,Female,Voice actress,Alive
+210,Great Son,Male,Student at Springfield Elementary School,Alive
+211,George W. Bush,Male,Former President of the United States  Former Governor of Texas,Alive
+212,Pinchy,Unknown,Unknown,Deceased
+213,French Chef,Male,ChefAssassin,Unknown
+214,Bode Wright,Male,Reverend (former)Youth Minister (former),Alive
+215,Bouncer (couch gag),Male,Nightclub Bouncer,Unknown
+216,Female orange haired have a brown hat,Female,Unknown,Alive
+217,Corey Masterson,Male,College studentSecretary of Partying DownRole model for girls,Alive
+218,Unnamed boy with sandals,Male,Student at Springfield Elementary School,Alive
+219,Grandma Unnamed with gray haired and glasses,Female,Actor,Alive
+220,Wanda,Female,Student at Springfield Elementary School,Alive
+221,Janet Reno,Female,Lawyer,Deceased
+222,Mervin Monroe,Male,Tattoo artist,Alive
+223,Arthur Crandall,Male,Ventriloquist,Alive
+224,Tyler (Female 3rd Grader),Female,Student at Springfield Elementary,Alive
+225,King Winter,Male,King,Fictional
+226,Hot Dog Vendor,Male,Vendor,Alive
+227,Beezee,Female,2nd Grade Student at Springfield Elementary School,Alive
+228,Zutroy,Male,Temporary Danger Emissions SupervisorCar salesman,Alive
+229,Stampy,Unknown,Unknown,Alive
+230,Kyle's Father,Male,Unknown,Alive
+231,Mr. Borton,Male,Unknown,Alive
+232,Comic Book Gay,Male,Comic book store owner,Alive
+233,Estonian Dwarf,Male,Actor Stuntman,Alive
+234,Hyman Krustofsky,Male,Rabbi at Temple Beth Springfield,Deceased
+235,Coward,Male,StudentSoldier,Alive
+236,Dixie Chicks,Unknown,Unknown,Unknown
+237,Frank Ormand,Male,Owner of the Pretzel Wagon,Deceased
+238,Sauna User 2 (couch gag),Male,Unknown,Alive
+239,Drummer,Male,Drummer for The Larry Davis Experience,Alive
+240,Dowager,Female,Socialite,Alive
+241,Killer Krusty Doll,Male,Toy,Noncanon
+242,Hullabalooza Fan,Male,Unknown,Unknown
+243,Richard Branson,Male,Owner of Virgin,Alive
+244,Huell Howser (character),Male,Television personalityActor (briefly),Deceased
+245,Ms. Coco,Female,ClownHistory Teacher at Hershel Krustofsky School,Alive
+246,Millicent,Female,Horse trainer,Alive
+247,Bigfoot,Unknown,Unknown,Alive
+248,President Lisa,Female,Unknown,Alive
+249,Nurse Female Brown,Female,Nurse at Springfield Elementary School,Alive
+250,Jub-Jub Bouvier,Unknown,Unknown,Alive
+251,Classy Pig,Unknown,Unknown,Unknown
+252,Declan Desmond,Male,Documentary Filmmaker,Alive
+253,House Boy,Unknown,Unknown,Unknown
+254,Gheet Nahasapeemapetilon,Male,Baby,Alive
+255,Pria Nahasapeemapetilon,Female,Unknown,Alive
+256,Gumby,Male,Unknown,Fictional
+257,Mr. Zzyzwicz,Male,Unknown,Alive
+258,Tyler Gables,Male,Student at Springfield Elementary,Alive
+259,Al Gore,Male,PoliticianWritterEnviromental activist,Alive
+260,Ogdenville Boy,Male,Likely a student at school,Alive
+261,Larry (Duffman),Male,Duffman Actor (Formerly),Deceased
+262,Gummy Sue Spuckler,Female,Unknown,Alive
+263,Frog Prince,Male,Prince,Alive
+264,Snowball I,Unknown,Unknown,Deceased
+265,Coltrane,Unknown,Unknown,Deceased
+266,Bobo,Male,Mr. Burns' teddy bear,Alive
+267,Head of Santa School,Male,Personnel Director of Springfield Mall,Alive
+268,Conrad,Male,App for predicting consequences on posts,Alive
+269,Cecil Terwilliger,Male,Criminal MastermindChief Hydrological and Hydrodynamical Engineer,Alive
+270,Ron Rabinowitz,Male,Agent,Alive
+271,Myra,Female,Secretary,Alive
+272,Neil Gaiman (character),Male,Unknown,Alive
+273,Mrs. Scratchy,Female,Unknown,Fictional
+274,Dr. Hibbert's Second Son,Male,Student,Alive
+275,Frank Sinatra,Male,SingerActor,Deceased
+276,William MacDougal II,Male,Bar owner,Alive
+277,Male Korean Artist 2 (couch gag),Male,Cartoonist,Unknown
+278,Lumpy,Unknown,Unknown,Alive
+279,MacGyver,Unknown,Unknown,Unknown
+280,Bono,Male,ActorHumanitarianMusicianProducerSinger,Alive
+281,Big Bird,Unknown,Unknown,Alive
+282,Surly Duff,Male,Mascot for Duff Beer,Fictional
+283,Stonecutters,Unknown,Unknown,Unknown
+284,State Comptroller Atkins,Male,State Comptroller,Alive
+285,John Wilkes Booth,Male,Actor,Deceased
+286,Gavin,Male,Student,Alive
+287,Burly,Male,Mascot,Fictional
+288,Quinn Hopper,Female,Coding teacher at Springfield ElementaryDeveloper of Conrad,Alive
+289,Princess Kashmir,Female,Exotic dancer,Alive
+290,Frankie the Squealer,Male,Mobster,Alive
+291,Bobby Peterson,Male,Dean of Springfield University,Alive
+292,Tom Gammel,Male,Unknown,Alive
+293,Jason Voorhees,Male,Serial Killer,Deceased
+294,Alcatraaz,Male,Rapper,Alive
+295,King Homer (character),Unknown,Unknown,Fictional
+296,E-mail,Male,Student at Springfield Elementary School,Alive
+297,God,Male,Creator of the Universe,Alive
+298,Count von Count,Male,Unknown,Alive
+299,McGarnagle,Male,Unknown,Fictional
+300,Hypnotist,Male,HypnotistMall Santa Trainer,Alive
+301,Bleeding Gums Murphy,Male,Musician,Deceased
+302,Scratchy Jr.,Unknown,Unknown,Fictional
+303,Mr. Hippie,Male,Substitute teacher,Alive
+304,Justin,Male,Student,Unknown
+305,Carmen Electra (character),Female,TV Show Co-HostActress,Alive
+306,Female Korean Artist 1 (couch gag),Female,Cartoonist,Unknown
+307,Apu's Dog,Male,Unknown,Alive
+308,Colonel Klink,Male,Colonel / Fictional character / Homer's conscience,Fictional
+309,Ed McMahon,Male,Announcer,Unknown
+310,Dr. Stacey Swanson,Female,Psychologist,Alive
+311,Gina Vendetti,Female,Unknown,Alive
+312,Red Barclay,Male,Trucker,Deceased
+313,Robin Williams,Male,Actor,Deceased
+314,Old Jewish Man,Male,Retired (currently)Casablanca studio executive (formerly),Alive
+315,Miss Piggy,Unknown,Unknown,Alive
+316,Chocolate rabbits,Unknown,Unknown,Unknown
+317,Lionel Richie,Male,Singer,Alive
+318,Q-Bert Spuckler,Male,Unknown,Alive
+319,Fidel Castro,Male,Ex-Cuban President,Deceased
+320,Ms. Mouse,Female,Unknown,Fictional
+321,Sara (Student),Female,Student at Springfield Elementary School,Alive
+322,Mike's Student 2,Male,Fifth Grade Student at Springfield Elementary School,Alive
+323,American Spy,Male,Spy for the American Government,Alive
+324,Male Twin,Male,Student at Springfield Elementary School,Alive
+325,Repo Man 2 (Make Room for Lisa),Male,Repo agent,Unknown
+326,Arnold Schwarzenegger,Male,President of the United States,Alive
+327,Mrs. Rhenquist,Female,Unknown,Alive
+328,"""Where the Redfern Grows"" 5th grader",Male,Student,Alive
+329,Ezekiel,Male,Student,Alive
+330,Oscar the Grouch,Male,Unknown,Alive
+331,Evan Conover,Male,Undersecretary for International Protocol,Alive
+332,Fritz,Male,Businessman,Alive
+333,Poor Violet,Female,Sympathy Orphan,Alive
+334,Audrey McConnell's Student 1,Male,Student at Springfield Elementary School,Alive
+335,Bill (KBBL DJ),Male,Radio DJ,Alive
+336,Benedict Arnold,Male,Soldier,Deceased
+337,Sandeep Nahasapeemapetilon,Male,Unknown,Alive
+338,Howard (Moaning Lisa),Male,Student,Alive
+339,Male Club Hopper (couch gag),Male,Unknown,Unknown
+340,Aunt Hortense,Female,Unknown,Deceased
+341,Abraham Lincoln,Male,16th President of the United States,Deceased
+342,The Warden,Male,Warden,Unknown
+343,Dalai Lama,Male,High lama,Alive
+344,Corporal Punishment,Male,Enforcer on Krusty's show,Alive
+345,José Canseco (character),Male,Baseball player,Alive
+346,Sakatumi,Male,Professional sumo wrestler at the Sumo Stadium,Alive
+347,Joey,Male,Mobster,Alive
+348,Horst,Male,Businessman,Alive
+349,Mr. Zörker,Male,Unknown,Alive
+350,Stuart,Male,Unknown,Alive
+351,Benjamin Franklin,Male,Inventor,Deceased
+352,Summer Romance girl,Female,Student (possible),Alive
+353,Akira,Male,Waiter/Chef at The Happy SumoKarate teacher at Springfield Martial Arts Academy,Alive
+354,Adam,Male,Being one of God's people,Noncanon Deceased
+355,Captain Kwik,Unknown,Unknown,Unknown
+356,Blinky,Unknown,Unknown,Deceased
+357,Rod Runtledge,Male,Radioactive Man's sidekick Fallout Boy,Unknown
+358,Tiago,Male,Samba School teacher,Alive
+359,Sadruddin Mahbaradad,Male,Unknown,Unknown
+360,Judge Julie,Female,Judge at the Springfield County Court House,Alive
+361,Cutout Foot,Unknown,Unknown,Unknown
+362,Girl with glasses,Female,Student,Alive
+363,Sharks (couch gag),Unknown,Unknown,Unknown
+364,Neil,Male,Spokesman for Powersauce,Alive
+365,Sherri and Terri's unnamed sons,Male,Unknown,Noncanon
+366,Tyler's Sister,Female,Student at Springfield Elementary,Alive
+367,Golem of Prague,Male,Slave,Alive
+368,SpongeBob SquarePants,Male,Fry cook,Alive
+369,Alex Whitney,Female,Student at Springfield Elementary School,Alive
+370,Woody Allen,Male,ActorAuthorComedianDirectorMusicianPlaywrightScreenwriter,Alive
+371,Angelo,Male,Employee at Luigi'sSub-contractor,Alive
+372,The District Attorney,Male,Springfield District Attorney,Alive
+373,Primo,Male,Mobster,Deceased
+374,Alec Baldwin (character),Male,Actor,Alive
+375,Rosa Barks,Unknown,Unknown,Alive
+376,Little Debbie Dimples,Female,Clown,Alive
+377,Brown-haired boy,Male,Student,Alive
+378,The Grumple,Male,Thief of Holiday Cheer,Fictional
+379,Sashi Nahasapeemapetilon,Female,Unknown,Alive
+380,Munchie,Male,Owner of Groovy Grove Juice Corporation,Alive
+381,The Ingestible Bulk,Unknown,Unknown,Unknown
+382,Laddie,Unknown,Unknown,Alive
+383,Ernest Hemingway,Male,AuthorJournalist,Deceased
+384,Roscoe,Male,Ajax Steel Mill manager,Alive
+385,Dakota (Orange),Male,Student at Springfield Elementary,Alive
+386,Cheery,Female,Fictional character,Unknown
+387,Evelyn Peters,Female,Socialite,Alive
+388,Cowboy Bob,Male,RV Salesman,Alive
+389,Noah's Mother,Female,Unknown,Alive
+390,Gunter's Wife,Female,Unknown,Alive
+391,Pahusacheta Nahasapeemapetilon,Female,Unknown,Alive
+392,Irish Policeman,Male,Policeman,Alive
+393,Stark Richdale,Male,Writer  Teacher,Alive
+394,Joey Jo-Jo Junior Shabadoo,Male,Unknown,Alive
+395,Valley Mercer,Female,Student,Alive
+396,Ms. Phipps,Female,Springfield Elementary School Nurse,Alive
+397,Ice Cream Lady,Female,Waitress,Unknown
+398,Sandwich Delivery Guy,Male,Sandwich delivery,Alive
+399,Nina Skalka,Female,Student,Alive
+400,Toucan Sam,Unknown,Unknown,Deceased
+401,Kearney's Other Son,Male,Unknown,Alive
+402,Master Sushi Chef,Male,Sushi Chef at The Happy Sumo,Alive
+403,Lester,Male,Fourth Grade Student,Alive
+404,Penelope Owsley,Female,Former coaster on Krusty the Clown's show,Alive
+405,Gypsy,Female,Fortuneteller in Gypsy's Shop,Alive
+406,Cthulhu,Male,Unknown,Alive
+407,Puppy Goo-Goo,Female,Milhouse’s toy dog,Alive
+408,Johnny Carson,Male,Television host,Deceased
+409,Tabitha Shingle,Female,Podcast host,Alive
+410,Ellen DeGeneres (character),Female,"Comedian, Actress",Alive
+411,Brown-haired girl,Female,Student at Springfield Elementary School,Alive
+412,Dorothy,Female,Unknown,Alive
+413,Ballet Teacher,Female,Ballet teacher at Springfield Elementary School,Alive
+414,Capital City Goofball,Male,Capital City baseball team mascot; state legislator,Alive
+415,Courtney Love,Female,SingerGuitaristActress,Alive
+416,Bing Crosby,Male,Unknown,Deceased
+417,Conformco,Unknown,Unknown,Unknown
+418,Popular Girl 1,Female,Student at Springfield Elementary School,Alive
+419,The Incredible Hulk,Unknown,Unknown,Unknown
+420,The Collider,Male,Super Villain,Fictional
+421,The Android's Dungeon & Baseball Card Shop,Unknown,Unknown,Unknown
+422,Mrs. Smithers,Female,Unknown,Alive
+423,Becky Shorter,Female,Springfield Elementary School Student,Alive
+424,Space Mutants,Male,Movie mutants,Alive
+425,Mike Scioscia (character),Male,Baseball player,Alive
+426,Contractor,Male,Contractor,Alive
+427,Jack Crowley,Male,CriminalPainter,Alive
+428,Duff Beer Advertiser,Male,Actor,Alive
+429,Robot (Lost in Space),Male,Robot,Unknown
+430,Patricia,Unknown,Socialite,Unknown
+431,The Larry Davis Experience,Unknown,Unknown,Unknown
+432,Jimmy Carter,Male,Former President,Alive
+433,Fireman 2 (couch gag),Male,Fireman,Alive
+434,Roy,Male,Unknown,Alive
+435,Shary Bobbins,Female,Nanny for The Simpson family (Former),Deceased
+436,Ron Howard (character),Male,Film Director,Alive
+437,Heather Spuckler,Female,Singer/Child,Alive
+438,Sara Sloane,Female,Movie StarCelebrity,Alive
+439,Clifford Burns,Male,Unknown,Deceased
+440,Sheldon Skinner,Male,Radio operator,Deceased
+441,Captain Tenille,Male,US Naval submarine captain,Deceased
+442,Number 51,Male,Former Stonecutter,Alive
+443,Xena the Warrior Princess,Female,Super hero,Alive
+444,Cosine Tangent,Male,Student,Alive
+445,Fruit Bat Man,Unknown,Unknown,Unknown
+446,Groundskeeper Wilma,Female,Groundskeeper at Shelbyville Elementary School,Alive
+447,Fit-Fat Tony,Male,Mob boss,Alive
+448,Teenage Babysitter,Female,StudentBabysitter,Alive
+449,Waverly Hills Boy 1,Male,Student at Waverly Hills Elementary School,Alive
+450,Lucius Sweet,Male,Boxing manager,Alive
+451,Isabel Gutiérrez,Female,Student at Springfield Elementary School,Alive
+452,Aristotle Amadopolis,Male,Owner of Shelbyville Nuclear Power Plant,Alive
+453,Mrs. Nahasapeemapetilon,Female,Unknown,Alive
+454,Sebastian Cobb,Male,Scientist,Unknown
+455,Birthday Spuckler,Male,Homeschooled studentFormer star of The Krusty the Clown Show,Alive
+456,Nigel (Moho House),Male,Unknown,Alive
+457,Nana Sophie Mussolini,Female,Retired,Alive
+458,Paul McCartney (character),Male,Musician,Alive
+459,Amber Dempsey,Female,Little Miss Springfield,Alive
+460,Retirement Castle administrator (Bart the General),Female,Administrator at the Springfield Retirement Castle,Alive
+461,Maria Quimby,Female,Actress,Alive
+462,Hunter (couch gag),Male,Hunter,Unknown
+463,Mrs. Shorter,Female,Unknown,Unknown
+464,Bait Shop Owner,Male,Catfish Lake Bait Store Owner,Unknown
+465,Professor Huntington,Male,Professor at Swigmore University,Deceased
+466,David Crosby (character),Male,SingerSongwriter,Deceased
+467,Grandma Flanders,Female,Retired,Deceased
+468,Brody McKenna,Male,Federal Prosecutor,Alive
+469,Barbara Bush,Female,Former First Lady of the United States (1989-1993),Deceased
+470,Sherri and Terri's Great-Aunt,Female,Unknown (Probably retired),Alive
+471,Jerry Mackleberry,Male,Student,Noncanon
+472,Dave Shutton,Male,Investigative journalist,Alive
+473,Orville Simpson,Male,Disciplinarian,Unknown
+474,Jiff Simpson,Male,Unknown,Alive
+475,Bob Dole,Male,Presidential candidate,Deceased
+476,Mr. Sparkle (mascot),Male,Mascot for a Japanese detergent company,Fictional
+477,"Frank Grimes, Jr.",Male,Mechanic,Alive
+478,Kathy,Female,Personnel for Charles Montgomery Burns at the Springfield Nuclear Power Plant,Alive
+479,Mothra,Unknown,Unknown,Alive
+480,Gloria's Daughter,Female,Unknown,Alive
+481,Pyro,Male,American Gladiator,Alive
+482,Hank Hill,Male,Assistant Manager of Strickland Propane,Alive
+483,Rubella Scabies Spuckler,Female,Unknown,Alive
+484,Marty (KBBL DJ),Male,KBBL radio DJ,Alive
+485,Don Castellaneta,Male,Mafia boss,Alive
+486,Female Club Hopper 2 (couch gag),Female,Unknown,Unknown
+487,Cyndi Lauper,Female,Actress,Alive
+488,Yendor,Male,Fictional Character,Unknown
+489,Afro Girl,Female,Student,Unknown
+490,Diane (network executive),Female,Network executive,Alive
+491,Ashley (3rd Grader),Female,Student at Springfield Elementary,Alive
+492,Johnny Unitas (character),Male,Football Player,Deceased
+493,Giant Handed Man,Male,Employee at Springfield Nuclear Power Plant,Alive
+494,Ugolin,Male,Wine MakerMayorLeather makerExpert on mustardPoetRobber,Alive
+495,B.F. Sherwood,Male,Psychiatrist,Alive
+496,Mrs. Zörker,Female,Unknown,Alive
+497,Poodle Lady,Female,Unknown,Deceased
+498,Señora Bumblebee Man,Female,Unknown,Alive
+499,Jaffee Ziswhisky,Male,4th Grade Student at Springfield Elementary School,Alive
+500,Jay Sherman,Male,Critic,Alive
+501,Princess Opal (Character),Female,Fortune TellerShop Owner,Alive
+502,Evelyn,Female,Unknown,Alive
+503,Donald Trump,Male,45th President of the United States of America.,Alive
+504,Elvis Presley,Male,MusicianActor,Deceased
+505,Gary Coleman (character),Male,Security guard at Kid First Industries,Deceased
+506,Rex (Bart of Darkness),Male,Student,Alive
+507,Lisa's Classmate 6's Sister,Female,Student at Springfield Elementary School,Deceased
+508,Joseph Stalin,Male,Dictator of the Soviet Union,Deceased
+509,Female Korean Artist 2 (couch gag),Female,Cartoonist,Unknown
+510,Mort Krupp,Male,Farmer,Alive
+511,Mrs. Frink,Female,Unknown,Alive
+512,Larry Kidkill,Male,Owner of Springfield City Zoo,Alive
+513,Martha Stewart (character),Female,AuthorTV presenter,Alive
+514,Shotgun Pete,Male,Unknown,Alive
+515,Ham,Male,Student,Alive
+516,Audrey McConnell's Student 4,Male,Student,Alive
+517,Dr. Crab,Male,Unknown,Alive
+518,Mahatma Gandhi,Male,Unknown,Deceased
+519,Queen Elizabeth I,Female,Queen of England (1558-1603),Noncanon
+520,Marge Ziff,Female,Mayor of Springfield,Noncanon
+521,Bryce Dallas Howard,Female,Actress,Alive
+522,Lois Griffin,Female,Piano TeacherChurch Organist (Family Guy Season 5+),Alive
+523,William Wallace,Male,Scottish Warrior,Unknown
+524,Freedom,Unknown,Unknown,Alive
+525,Judith Underdunk,Female,Shakespearean Actress,Alive
+526,Chief Inspector,Male,Nuclear inspector at the Springfield Nuclear Power PlantDesigner at Powell MotorsResearch scientist at Tipsy McStagger's Good-Time Drinking and Eating Emporium,Alive
+527,Miss Goodthighs,Female,Employee at Globex Corporation,Unknown
+528,Popular Girl 3,Female,Student at Springfield Elementary School,Alive
+529,Bluella,Unknown,Unknown,Deceased
+530,Al Gumble,Male,Owner of Barney's Bowlarama,Alive
+531,Albert,Male,Protester,Deceased
+532,Petroleus Rex,Male,Supervillain,Fictional
+533,Millionaire Actor,Male,Actor,Alive
+534,Charles Bronson,Male,Actor,Deceased
+535,Mr. T,Male,Actor,Alive
+536,Freddy Krueger,Male,Murderer in dreams,Alive
+537,Jeremy Jailbird,Male,Unknown,Alive
+538,Gavin and Katelyn's Mother,Female,Unknown,Alive
+539,The Thing,Unknown,Unknown,Unknown
+540,Stephen Hawking (character),Male,Theoretical physicist,Deceased
+541,Teller,Male,Comedian  Illusionist  Writer,Alive
+542,Rusty The Clown,Male,Clown,Alive
+543,Cracker executive,Male,Executive at Southern Cracker,Alive
+544,Carol Berrera,Female,Army Sergeant (retired)Fourth Grade Teacher at Springfield Elementary (formerly),Alive
+545,Before They Were Famous Host,Male,Television host,Unknown
+546,Jim-Jam Bonks,Male,Character in Cosmic Wars,Fictional
+547,Dylan Spuckler,Male,Unknown,Alive
+548,The Raccoon Family,Unknown,Unknown,Unknown
+549,Hazel,Female,Retired,Alive
+550,Nell Nicholson,Female,Student at Springfield Elementary School,Alive
+551,Benevenstanciano,Male,Magazine salesman,Alive
+552,Cregg Demon,Male,Magician,Alive
+553,Morty Szyslak,Male,Unknown,Alive
+554,Armando (Barber),Male,Hairdresser,Alive
+555,Danica Patrick,Female,Race car driver,Alive
+556,Gummi Venus de Milo,Unknown,Unknown,Unknown
+557,Shelbyville Manhattan,Male,TravelerFounder of Shelbyville,Deceased
+558,Fox Mulder,Male,FBI Special Agent,Alive
+559,Richie Sakai,Male,Anesthesiologist,Unknown
+560,Frankie (Health Inspector),Male,Health Inspector,Deceased
+561,Bud Armstrong,Male,Pro Football Commissioner,Unknown
+562,Langdon Alger,Male,Student at Springfield Elementary School,Alive
+563,Vampiredna,Unknown,Unknown,Unknown
+564,Dr. Zweig,Female,Psychiatrist,Unknown
+565,Bender Bending Rodríguez,Male,"Formerly: Girder-bender, Soldier",Unknown
+566,Tyler's Brother,Male,Student at Springfield Elementary,Alive
+567,Irving Zitsofsky,Male,Tattoo Removal Specialist at Dr. Zitsofsky's Dermatology ClinicOwner of Dr. Zitsofsky's Dermatology Clinic,Alive
+568,Minnie Szyslak,Female,Mattress saleswomanFood critic,Alive
+569,Scott Christian,Male,Co-Anchor for Channel 6 News,Alive
+570,Wizard Twins,Female,Wizards,Alive
+571,Belle,Female,Owner of La Maison Derrière,Alive
+572,Dr. Octopus,Male,Supervillian,Alive
+573,Christopher Columbus,Male,Explorer  Navigator  Colonizer,Deceased
+574,Two-nicorn,Unknown,Unknown,Fictional
+575,Lisa's Classmate 5,Male,Student,Alive
+576,Karen (socialite),Female,Socialite,Alive
+577,Der Zip Zorp,Male,Electronica artist,Alive
+578,Xoxchitla,Female,Host of TeleboobiesActress,Alive
+579,Daphne Burns,Female,Retired,Unknown
+580,Batman,Unknown,Superhero,Unknown
+581,C.H.U.M.,Male,"Robot, Traveler (Non-canon)",Alive
+582,Jimbo Jr.,Male,Student at Springfield Elementary School,Alive
+583,Jack Larson,Male,President of Laramie Cigarettes,Alive
+584,Zachary Vaughn,Male,Former teacher at Springfield Elementary School,Alive
+585,Guitarist,Male,Guitarist for The Larry Davis Experience,Alive
+586,Bart Junior (frog),Unknown,Unknown,Alive
+587,Guy Incognito,Male,Unknown,Alive
+588,Pope John Paul II,Male,Catholic Pope,Deceased
+589,Cheesy McMayor,Male,Fast-Food Mascot,Alive
+590,Retirement Castle Nurse,Female,Nurse,Alive
+591,Grandma Van Houten,Female,Retired,Alive
+592,Hugs Bunny,Male,Referee at Mayor's Easter Egg Hunt,Alive
+593,Brittany Brockman,Female,Student at Springfield Preparatory School,Alive
+594,Justin's father,Male,Unknown,Alive
+595,Abraham Simpson I,Male,Unknown,Deceased
+596,Joshua and Amber's Mom,Female,Unknown,Alive
+597,James L. Brooks (character),Male,Writer,Unknown
+598,Mayor Quimby's Bodyguards,Male,Bodyguards,Alive
+599,Black Weasel,Male,Student,Alive
+600,Lisa's Classmate 2,Male,Student at Springfield Elementary School,Alive
+601,Sherri and Terri's sister,Female,Unknown,Alive
+602,Gabriel,Male,Social worker,Alive
+603,Della,Female,Lionel Hutz's secretaryEmployee at Shotgun Pete's (formerly),Alive
+604,Drederick Tatum,Male,Celebrity boxer,Alive
+605,Gloria S.,Female,Unknown,Alive
+606,Giuseppe,Unknown,Unknown,Alive
+607,McBain,Male,Cop (Former)Transport Pilot,Fictional
+608,Graphic Novel Kid,Male,Unknown,Deceased
+609,John S.,Male,Unknown,Alive
+610,Postage Stamp Fellow,Male,Stamp collector,Alive
+611,Royce McCutcheon,Male,Salesman,Alive
+612,Nabendu Nahasapeemapetilon,Male,Baby,Alive
+613,Funzo,Unknown,Toy,Unknown
+614,Vincent Price,Male,Actor,Deceased
+615,Tiffany Spuckler,Female,Unknown,Alive
+616,Scary Vultures,Unknown,Unknown,Unknown
+617,Sardonicus,Male,Prisoner,Alive
+618,Khlav Kalash vendor,Male,Vendor,Alive
+619,William Shakespeare,Male,"Playwright, poet, actor",Deceased
+620,Cap'n Crunch,Male,Mascot,Fictional
+621,John Travolta,Male,Actor  Bartender  Pilot,Alive
+622,The Great Raymondo,Male,Magician,Alive
+623,Jay Leno,Male,"Comedian, television host, car collector",Alive
+624,Chucky,Male,Unknown,Fictional
+625,Tribal Chief,Male,Manager of Caesar's Pow-Wow Casino,Noncanon
+626,Seth,Male,Owner of Groovy Grove Juice Corporation,Alive
+627,Tony Bennett (character),Male,Actor,Deceased
+628,Kermit the Frog,Unknown,Unknown,Fictional
+629,Justin Timberlake,Male,Singer,Alive
+630,Mrs. Dexter,Female,Housewife,Alive
+631,Robby the Automaton,Male,Promoting Springfield Knowledgeum,Unknown
+632,Ms. Finch,Female,Employee at the Springfield Nuclear Power Plant,Alive
+633,Hurt Leg Simpson Relative,Male,Unknown,Alive
+634,Mrs. Szyslak,Female,Unknown,Deceased
+635,Marge's Dream Lover,Male,Pirate,Alive
+636,Benjamin,Male,College Student,Alive
+637,Birch Barlow,Male,Talk Show Host,Alive
+638,Milo,Male,Owner of Coolsville Comics & Toys,Alive
+639,Snowball II,Unknown,Unknown,Deceased
+640,Mary Spuckler,Female,Unknown,Alive
+641,Woman Interviewer,Female,News reporter,Alive
+642,Singapore,Unknown,Unknown,Unknown
+643,Burglar 2 (couch gag),Male,Thief,Alive
+644,Tito Puente (character),Male,Jazz MusicianBandleader,Deceased
+645,Richard's Grandmother,Female,Unknown,Alive
+646,Adrian Belew,Male,Springfield Elementary Student,Alive
+647,Wile E. Coyote,Unknown,Unknown,Fictional
+648,ClownFace,Male,Supervillain,Fictional
+649,Great Mom,Female,Unknown,Alive
+650,The Happy Little Elves,Male,Unknown,Fictional
+651,Fallout Boy,Male,Unknown,Fictional
+652,Rupert Murdoch (character),Male,Owner of FOX,Alive
+653,Angry Mob,Unknown,Unknown,Unknown
+654,Miss Springfield,Female,Miss SpringfieldMayor (for 3 seconds),Alive
+655,Russ Cargill,Male,Head of the EPA (Formerly)Evil Mastermind,Alive
+656,Gort,Male,Robot,Alive
+657,Ishmael,Male,Student,Alive
+658,Raphael,Male,Various,Alive
+659,George H. W. Bush,Male,Former Vice President and President of the United States  Member of the Stonecutters World Council,Deceased
+660,Lilly Ellison,Female,Students at Springfield Elementary School,Alive
+661,Les Moore,Male,Greyhound Racer,Alive
+662,Willie's Mother,Female,Starbucks employee,Alive
+663,Player 1,Male,Video-game character used by the first player in Super Slugfest,Unknown
+664,Tumi,Female,Student,Alive
+665,Baz,Unknown,Unknown,Alive
+666,Bashir bin Laden,Male,Student at Springfield Elementary School,Alive
+667,FBI agent (Donnie Fatso),Male,FBI agent,Alive
+668,Iggy Wiggum,Male,Soldier,Deceased
+669,Male Korean Artist 3 (couch gag),Male,Cartoonist,Unknown
+670,Mike (Homer's Night Out),Male,Unknown,Alive
+671,Nibbles,Unknown,Unknown,Deceased
+672,Carol Jones,Female,Prostitute,Alive
+673,Leprechaun,Male,Unknown,Alive
+674,Ian (Very Tall Man),Male,Writer for The Itchy & Scratchy Show,Alive
+675,Parasite,Unknown,Unknown,Fictional
+676,David Copperfield,Male,Illusionist,Unknown
+677,Dexter Colt,Male,Private Detective,Alive
+678,Coach Krupt,Male,Gym Teacher,Alive
+679,Ramrod,Male,BikerHell's Satans member,Alive
+680,Mr. Rhenquist,Male,Unknown,Alive
+681,Geoffrey,Male,Unknown,Alive
+682,Albert Dershman,Male,Lawyer,Alive
+683,Darryl,Male,Student at Springfield Elementary,Alive
+684,Freddy,Male,Student at Springfield Elementary School,Alive
+685,Leopold,Male,Assistant Superintendent,Alive
+686,Snowball III,Unknown,Unknown,Deceased
+687,Gill-man,Unknown,Unknown,Unknown
+688,Joe Frazier,Male,Boxing,Deceased
+689,John (Homer's Phobia),Male,Owner of Cockamamie's Collectibles Shop,Alive
+690,Miss Wyoming,Female,Model,Unknown
+691,Dr. Colossus,Male,Supervillain,Alive
+692,Long-haired girl,Female,Student,Alive
+693,Roberta,Female,Socialite,Alive
+694,Mutant Rabbit,Male,Unknown,Noncanon
+695,Ms. Mancuso-Gluckman,Female,Therapist,Noncanon Deceased
+696,Eliza,Female,Second Grade Student,Alive
+697,Kim,Female,Student at Springfield High School (in the past)Protester,Alive
+698,Bob Hope (character),Male,Comedian / Actor,Deceased
+699,Brunella Pommelhorst,Female,Springfield Elementary Gym TeacherEmployee at Starving Teachers Moving Co.,Alive
+700,Chuck Ellis,Male,Regional Director of the IRS,Unknown
+701,Mojo,Unknown,Unknown,Unknown
+702,Sylvia Winfield,Female,Retired,Alive
+703,Elmo,Male,Character on Sesame Street,Alive
+704,Meathook,Male,Biker,Alive
+705,Uma Nahasapeemapetilon,Female,Unknown,Alive
+706,Phil (reporter),Male,TV reporter,Alive
+707,Mason Fairbanks,Male,Lifeguard,Alive
+708,Mario,Male,Game Character/Plumber,Fictional
+709,Cool kid,Male,Student,Alive
+710,Annie Dubinsky,Female,Veteran agent,Deceased
+711,Bort (boy),Male,Unknown,Alive
+712,Mr. Movie Phone,Unknown,Movie phone line speaker,Alive
+713,Retirement Castle administrator,Male,Administrator of the Retirement Castle,Unknown
+714,Mr. Costington,Male,Store owner of Costington's,Alive
+715,Jamie,Female,2nd Grade Student at Springfield Elementary School,Alive
+716,Hippie,Male,Operator at Uriah's Heap Recycling Center,Alive
+717,Old King Coal,Male,Supervillain,Fictional
+718,Nigel (manager),Male,ManagerManager of The Be Sharps (Former),Unknown
+719,Chris Griffin,Male,High school studentPaper boy (formerly)Employee at the Quahog Mini-Mart (formerly),Alive
+720,Ashley,Female,Student at Springfield Elementary,Alive
+721,Brandt,Male,Bartender at Moho House,Alive
+722,Lovejoy's sheepdog,Unknown,Unknown,Alive
+723,The California Raisins,Male,Musicians,Fictional
+724,Nina Sprungfeld,Female,Founder of Springfield Pirate Murderer and Head of the Springfield Historical Society,Alive
+725,Gary (nerd),Male,College Student,Alive
+726,Zombies,Unknown,Eat brains,Deceased
+727,Mr. Hoxha,Male,Unknown,Alive
+728,Sailor Kid,Male,Student at Springfield Elementary SchoolSailor (possibly),Alive
+729,Curious Bear Cub,Unknown,Unknown,Fictional
+730,Tina Ballerina,Female,ActressDancer,Alive
+731,Harry Potter (character),Male,Student,Alive
+732,Tom Hanks,Male,Actor,Alive
+733,Popular Girl 2,Female,Student at Springfield Elementary School,Alive
+734,Gardener (couch gag),Male,Gardener,Unknown
+735,Teacher Female with Purple Clothes and Brown Hair,Female,Artist at Springfield Elementary School,Alive
+736,Colonel Sanders,Male,Founder of Kentucky Fried Chicken,Deceased
+737,"Roger Meyers, Sr.",Male,Founder of I&S Studios,Deceased
+738,Mrs. Borton,Female,Unknown,Alive
+739,Mr. Taylor,Male,Professor,Alive
+740,Ronald Reagan,Male,Former President of the United States,Deceased
+741,St. Peter,Male,Guaridan of the gates of Heaven,Alive
+742,Audrey McConnell,Female,3rd Grade Teacher at Springfield Elementary School4th Grade Teacher,Alive
+743,Kyle's Mother,Female,Unknown,Alive
+744,Toaster Bot,Unknown,Transformer robot,Unknown
+745,Amid bin Laden,Male,Building demolition worker,Alive
+746,Barry Mackleberry,Male,Homer's former supervisor in Sector 7G,Alive
+747,Francesca Terwilliger,Female,CriminalHousewife,Alive
+748,Jacques,Male,Bowling Instructor (Formerly),Alive
+749,The Yes Guy,Male,Various,Alive
+750,Monster Couch (couch gag),Unknown,Unknown,Unknown
+751,Gerald Ford,Male,Former U.S. President,Deceased
+752,Luke Perry,Male,Krusty's former assistant,Deceased
+753,Stan Lee (character),Male,Comic book writer,Deceased
+754,Stan Taylor,Male,Springfield Atoms football player,Alive
+755,Ben Schatz (character),Male,Unknown,Unknown
+756,Mr. Teeny,Unknown,Unknown,Alive
+757,Pinhead (Hellraiser),Male,Leader of the cenobites,Alive
+758,Pokey,Unknown,Unknown,Alive
+759,Male with green shirt,Male,Unknown,Alive
+760,Max (Ice Cream Man),Male,Ice cream man,Deceased
+761,The Mad Hatter,Male,Unknown,Alive
+762,Sven Golly,Male,Hypnotist,Alive
+763,Sophie Jensen,Female,Student,Alive
+764,Luigi Risotto,Male,"Chef, Hollywood's foreign press",Alive
+765,Amber Simpson,Female,Cocktail WaitressProstitute (Implied),Deceased
+766,Jay Nahasapeemapetilon,Male,Kwik-E-Mart Clerk,Alive
+767,The Lisa Impostor,Female,ActressModel,Alive
+768,Woody Schedeen,Male,Unknown,Unknown
+769,Dubya Spuckler,Male,Homeschooled studentFormer star of The Krusty the Clown Show,Alive
+770,Rhinos,Unknown,Unknown,Unknown
+771,Adam West (character),Male,Actor,Deceased
+772,Chazz Busby,Male,Ballet teacher,Alive
+773,Female Unnamed with Brown Haired and Red Shirt,Female,Bank,Alive
+774,Bill Gates,Male,Chairman of Microsoft (formerly),Alive
+775,Male with gray haired blue sticker,Male,Unknown,Alive
+776,Moses,Male,Sheppard,Unknown
+777,Lisa's Classmate 2’s Grandfather,Male,Former soldier,Deceased
+778,Sonic the Hedgehog,Unknown,Unknown,Fictional
+779,Mesmerino,Male,Hypnotist,Alive
+780,Mr. Blackheart,Male,Ivory DealerFormer whale-hunterFormer seal-clubberFormer FOX President,Unknown
+781,Truth-Anne,Female,Student,Alive
+782,Alien (couch gag),Unknown,Unknown,Unknown
+783,Mr. Powell,Male,Unknown,Alive
+784,Mr. Becker,Male,Teacher,Alive
+785,Spirit Guide,Unknown,Unknown,Fictional
+786,Carmen,Female,Leader of Bossy Riot,Alive
+787,Dirk Richter,Male,Actor,Deceased
+788,Queen Elizabeth II,Female,"Constitutional monarch of the United Kingdom, British Overseas Territories and several members of the Commonwealth of Nations",Deceased
+789,Lance Murdock,Male,Stunt Devil,Alive
+790,African-American Teacher,Male,Teacher at Springfield Elementary,Alive
+791,House of Evil Shopkeeper,Male,Shopkeeper at House of Evil,Alive
+792,Lard Lad,Male,Advertiser for Lard Lad Donuts,Unknown
+793,Charlton Heston,Male,Actor,Deceased
+794,Jer,Male,Former Owner of King Toot's Music Store,Alive
+795,El Barto,Male,Graffiti tagger,Alive
+796,Pikachu,Male,Pokémon,Fictional
+797,Burglar 1 (couch gag),Male,Thief/Burglar,Alive
+798,Mr. Gammel,Male,Employee at the Springfield Nuclear Power Plant,Alive
+799,Larry Mackleberry,Male,Student,Noncanon
+800,Gerald Samson's Mother,Female,Unknown,Alive
+801,Legs,Male,Mobster,Alive
+802,"Maggie Simpson, Jr.",Female,Baby,Alive
+803,Marcus Le Marquez,Male,Jazz Musician,Alive
+804,Ice Cream Man,Male,Ice cream truck driver,Alive
+805,News Reporter (Call of the Simpsons),Male,Channel 6 News Reporter,Alive
+806,Dr. Foster,Male,Psychologist,Alive
+807,Mary Bailey,Female,Governor of Springfield's StateFormer Mayor of Springfield,Alive
+808,Barbara Van Horne,Female,Unknown,Alive
+809,Old Dad,Male,Unknown,Alive
+810,Collectible Pants Dude,Male,Clothing store owner,Alive
+811,Brad,Male,Spokesman for Powersauce,Alive
+812,Senator Mendoza,Male,Senator (Secretly runs a drug-cartel),Deceased
+813,White-Haired Girl,Female,Student at Springfield Elementary School,Alive
+814,Mike Wegman,Male,Counterfeit SalesmanFormerly: SNPP InternMike's Slices Owner,Alive
+815,Billy the Kid,Male,CowboyCriminalMurdererGang Member,Deceased
+816,Santa's Little Helper,Unknown,Unknown,Alive
+817,Report Card,Male,Student,Alive
+818,Ronald Chaporo,Male,Lawyer,Alive
+819,Maude Flanders Ghost,Female,Ghost,Deceased
+820,Femailman,Female,Mail Carrier,Alive
+821,The Hounds,Male,Unknown,Alive
+822,Poonam Nahasapeemapetilon,Female,Unknown,Alive
+823,Spider-Man,Unknown,Unknown,Unknown
+824,Boy with freckles,Male,Student at Springfield Elementary School,Alive
+825,Popular Girl 4,Female,Student at Springfield Elementary School,Alive
+826,Hubert Wong,Male,2nd Grade Student at Springfield Elementary School,Alive
+827,Kyle (3rd Grader),Male,Student at Springfield Elementary,Alive
+828,T. R. Francis,Female,Author,Fictional
+829,Sirloin Staff,Male,Singing waiters at The Singing Sirloin,Alive
+830,Norman Van Horne,Male,Unknown,Deceased
+831,Mrs. Mann,Female,Unknown,Alive
+832,Barry White (character),Male,Singer,Deceased
+833,Yellow Weasel,Male,Student,Alive
+834,Main Office Female,Female,Office at Springfield Elementary School,Alive
+835,Christopher Walken,Male,Actor,Unknown
+836,Handsome Pete,Male,Performer,Alive
+837,Mr. Bergstrom,Male,Substitute Teacher,Alive
+838,Ann Landers,Female,Advice Columnist,Unknown
+839,Lizzo,Female,Unknown,Noncanon
+840,Zia Simpson,Female,Student,Alive
+841,Ling Bouvier,Female,None,Alive
+842,Stupid Sexy Flanders,Male,Using a ski Not a job,Alive
+843,Laney Fontaine,Female,Actress,Alive
+844,Mother with blonde haired and blue dress,Female,Unknown,Alive
+845,Samantha Stankey,Female,Elementary student,Alive
+846,Rose Quimby,Female,Unknown,Alive
+847,Tattoo Annie,Female,Tattoo artistJailbird,Alive
+848,Greyhound Puppies,Unknown,Unknown,Alive
+849,Ali Rudy Vallée,Male,Musical automate,Alive
+850,The Collector,Male,Super villain,Noncanon Deceased
+851,Kumiko Albertson,Female,Owner of the Android's Dungeon & Baseball Card ShopManga artist,Alive
+852,Lombardo,Male,Art Teacher,Alive
+853,Half-Bald Worker,Male,Springfield Nuclear Power Plant,Alive
+854,Chuck Garabedian,Male,Unknown,Alive
+855,Stanley Simpson,Male,Airport bird shooter,Alive
+856,Female Unnamed with brown haired and ring,Female,Unknown,Alive
+857,Great Dad,Male,Employee at the Springfield Nuclear Power Plant,Alive
+858,Mr. Winfield,Male,Retired Aviator,Alive
+859,Dan Castellaneta,Male,Actor,Alive
+860,Number One,Male,Leader of the StonecuttersSecurity Guard at Star Trek Museum,Alive
+861,Freddy Quimby,Male,Press Secretary,Alive
+862,Santa Claus,Male,Holiday Figure,Alive
+863,Sid (Duffman),Male,"Duffman, and stripper",Deceased
+864,Dash Dingo,Unknown,Unknown,Fictional
+865,Mina bin Laden,Female,Unknown,Alive
+866,The Human Fly,Male,Daredevil (currently)Postal worker (formerly),Alive
+867,Lewis' lookalike,Male,Student,Alive
+868,Steve Mobbs,Male,Founder of MappleOwner of SpringFace,Deceased
+869,Don Brodka,Male,Try-N-Save security guardEx-disciplinarian,Alive
+870,Bambi,Unknown,Unknown,Alive
+871,Harry Houdini,Male,Magician,Deceased
+872,Larry Davis,Male,Lead singer of The Larry Davis Experience,Alive
+873,Fat Man (couch gag),Male,Unknown,Alive
+874,Boy with glasses,Male,Student,Alive
+875,Adolf Hitler,Male,Former Chancellor of Germany,Deceased
+876,Sideshow Raheem,Male,Former Assistant to Krusty,Alive
+877,Fantastic Dan,Male,Sky-writer,Unknown
+878,Vicki Valentine,Female,Dance InstructorFormer child star,Alive
+879,Lizzie Borden,Female,Unknown,Deceased
+880,Bowl-O-Rama Clerk,Male,Clerk at Barney's Bowlarama,Alive
+881,Tanya (student),Female,Student at Springfield Elementary School,Alive
+882,Train Driver (couch gag),Male,Unknown,Alive
+883,Albert Einstein,Male,Physicist,Deceased
+884,Clobber Girl,Unknown,Unknown,Unknown
+885,Angry Ricky,Male,Intern at Springfield Nuclear Power Plant (Formely),Alive
+886,Gloria (White Christmas Blues),Female,Unknown,Alive
+887,JJ Hibbert,Male,Student,Alive
+888,"Becky (It's a Mad, Mad, Mad, Mad Marge)",Female,Drive-through employee at Der Krazy Kraut,Alive
+889,Everyman,Unknown,Unknown,Unknown
+890,Frink's Robot Dog,Unknown,Unknown,Destroyed Icon
+891,Taylor Spuckler,Male,Unknown,Alive
+892,Jimmy the Scumbag,Male,Telemarketer,Alive
+893,Female Twin,Female,Student at Springfield Elementary School,Alive
+894,"Howard, Jr.",Male,FloristOwner of Howard's Flowers,Alive
+895,Dr. Velimirovic,Male,Plastic surgeon,Alive
+896,Pete Spuckler,Male,Retired,Alive
+897,Señor Ding Dong,Male,Owner of Señor Ding-Dong's Doorbell Fiesta,Alive
+898,Arthur Fortune,Male,Owner of Fortune Megastore department store chain.,Alive
+899,Titania,Female,Bartender at Juggernauts and Knockers,Alive
+900,"""Suing"" Simpson Relative",Male,"Unemployed, stages car accidents",Alive
+901,Grandma with black haired and blue Shirt,Female,Library Springfield (Formerly),Alive
+902,Gloria Jailbird,Female,Police Officer,Alive
+903,Old Lady Unnamed with Pink dress's Husband,Male,Solider or Army,Deceased
+904,LGBT Crowd,Male,Unknown,Alive
+905,Walter Hotenhoffer,Male,Owner of Hotenhoffer Pharmaceuticals,Alive
+906,Boy with bangs,Male,Student at Springfield Elementary School,Alive
+907,Photo Girl,Female,Student,Alive
+908,Doris Freedman,Female,Cafeteria chef and nurse at Springfield Elementary School,Alive
+909,Richard's Grandfather,Male,Unknown,Alive
+910,Female Club Hopper 1 (couch gag),Female,Unknown,Unknown
+911,Llewellyn Sinclair,Male,Stage DirectorWaiter,Alive
+912,Ernst,Male,Entertainer,Alive
+913,Snow Monster,Male,Unknown,Alive
+914,Repo Man 2 (couch gag),Male,Repossession,Unknown
+915,Medicine Woman,Female,HealerTherapistEskimo,Alive
+916,Gillian,Female,Socialite,Alive
+917,Bubbles,Male,Unknown,Unknown
+918,Tom Brokaw,Male,Journalist,Unknown
+919,Horace Wilcox,Male,"Congressman, (R-Springfield)",Deceased
+920,Coach Clay Roberts,Male,Wrestling coach,Alive
+921,Sauna User 3 (couch gag),Male,Unknown,Alive
+922,Hans (businessman),Male,Businessman,Alive
+923,Stradivarius Cain,Male,Spy,Alive
+924,Mickey Mouse (Character),Male,Cartoon character,Fictional
+925,Male Korean Artist 1 (couch gag),Male,Cartoonist,Unknown
+926,Comic Book Girl,Female,Unknown,Alive
+927,Sting (character),Male,MusicianSinger-songwriterMulti-instrumentalistActivistActorPhilanthropist,Alive
+928,Waiter 2,Male,Waiter,Unknown
+929,Darcy's Baby,Male,Baby,Alive
+930,Squawky,Unknown,Unknown,Deceased
+931,Maxwell Flinch,Male,Injury lawyer,Alive
+932,Manacek,Male,Detective,Alive
+933,Rodney Dangerfield (character),Male,Unknown,Deceased
+934,Jenny,Female,Unknown,Alive
+935,Barry (Heartbreak Hotel),Male,Unknown,Alive
+936,Fat Baby,Male,Unknown,Alive
+937,Regis Philbin,Male,TV host,Deceased
+938,Herb Powell,Male,InventorBusinessmanCEO of Powell Motors (Formerly),Alive
+939,Coach Krupt and Mrs. Krupt's daughter,Female,Student at Springfield Elementary School,Alive
+940,Geoff Jenkins,Male,Creator of Danger Dog(former)Nickel N' Dime Animation Studio animator (current),Alive
+941,Lois Pennycandy,Female,Krusty the Clown's personal assistant,Alive
+942,Simpson fish,Unknown,Unknown,Alive
+943,Greta Wolfcastle,Female,Student at Springfield Preparatory School,Alive
+944,Scarlet Tanager,Unknown,Unknown,Unknown
+945,Ozmodiar,Male,Unknown,Fictional
+946,Count Fudge-ula,Male,Cereal Mascot,Deceased
+947,Fireman 1 (couch gag),Male,Fireman,Alive
+948,Gloria Prince,Female,Nuclear technican,Alive
+949,Veterinarian,Male,"Veterinarian, Doctor",Unknown
+950,Judge Muntz,Male,Judge,Alive
+951,Gnome in your Home,Male,Child Murderer,Deceased
+952,Female bought with brown Hair,Female,Coach Shop Bag and Cashier,Alive
+953,Female with Blonde haired and white shirt blue J.M. Haggar,Female,Judge,Alive
+954,Rayshelle Peyton,Female,4th Grade teacher at Springfield Elementary School,Alive
+955,Gummy Joe,Male,Springfield Nuclear Power Plant employee,Alive
+956,Gareth Prince,Male,Stockbroker,Alive
+957,Homer's high school date,Female,Unknown,Unknown
+958,Surly Joe,Male,Construction worker for Surly Joe's Foundation Repair,Alive
+959,Hillary Clinton,Female,First LadyPresidential candidate,Alive
+960,Martha (robber),Female,Robber,Alive
+961,Homer's clones,Male,Unknown,Noncanon Deceased
+962,Art teacher,Female,Art teacher  Kent Brockman's assistant,Alive
+963,Donkey Kong,Unknown,Unknown,Fictional
+964,Justin Bieber,Male,Musician,Alive
+965,Ms. Albright,Female,Sunday school teacherOwner of the LaundromatHousewife (presumably),Alive
+966,Jack Marley,Male,Former: Nuclear Power Plant workerCurrent: Janitor,Alive
+967,The Detonator,Male,"Video game master, and teacher",Alive
+968,Radioactive Man (character),Male,Unknown,Fictional
+969,Dr. Hibbert's Second Daughter,Female,Unknown,Alive
+970,Maya,Female,Stage magician ,Alive
+971,Security Male with Brown Haired,Male,Security,Alive
+972,Annette (therapist),Female,Therapist-in-training,Alive
+973,Beggar Relative,Male,Beggar,Alive
+974,Joey Quimby,Male,Unknown,Alive
+975,Avery Mann,Male,Delivery manSuperhero,Alive
+976,Buzz Aldrin (character),Male,Astronaut,Alive
+977,Angelica Button,Female,Wizard,Fictional
+978,Anna Maria D'Amico,Female,Unknown,Deceased
+979,Donna's friend,Female,Student at Springfield Elementary,Alive
+980,Giuseppe Granfinali,Male,Fireworks pyrotechnic,Alive
+981,Girl with ponytail,Female,Student at Springfield Elementary School,Alive
+982,Kim Jong-il,Male,Former leader of North Korea,Deceased
+983,Unnamed Male with Camera Video and Brown Haired,Male,News Camera Video,Alive
+984,Chewbacca,Male,Co-Pilot,Unknown
+985,George Meyer (character),Male,Writer (former),Alive
+986,Susan,Female,Student,Unknown
+987,Mrs. Vanderbilt,Female,Unknown,Alive
+988,Lyla,Female,Buddhist  Worked at a food stand years ago,Deceased
+989,Peter Griffin,Male,Toy makerFishermanBrewery shipping clerk (current),Alive
+990,Mr. Vanderbilt,Male,Unknown,Alive
+991,Proctor Perkins,Female,Proctor for the Department of Standardized Testing,Alive
+992,The Fracker,Male,Supervillain,Fictional
+993,Northern Irish Leprechaun,Male,Unknown,Alive
+994,Jake the Barber,Male,Barber,Alive
+995,Girl playing soccer,Female,Student  Soccer player,Alive
+996,Bernie Sanders,Male,Politician,Alive
+997,Lugash,Male,Gymnastics Instructor at Lugash's Gym,Alive
+998,Kool-Aid Man,Male,Mascot,Fictional
+999,Tom The Turkey,Unknown,Unknown,Alive
+1000,Gamera,Unknown,Unknown,Alive
+1001,Lisa's Classmate 6,Male,Student at Springfield Elementary School,Alive
+1002,Danny,Male,Student at Springfield Elementary School,Alive
+1003,Knifey Spooney,Male,Unknown,Alive
+1004,Gabbo,Male,TV personality,Alive
+1005,Thomas Pynchon,Male,Author,Unknown
+1006,Joe Namath (Character),Male,Quarterback,Alive
+1007,Nash Castor,Male,TV Host,Alive
+1008,Male with blonde hair and glasses pink jet,Female,Unknown,Alive
+1009,Opal,Female,Talk Show Host,Alive
+1010,Emily Winthrop,Female,Dog Trainer,Alive
+1011,Cienega,Female,TV host,Alive
+1012,Jitney Spuckler,Female,Homeschooled studentFormer star on The Krusty the Clown Show,Alive
+1013,Smug Girl,Female,Student,Alive
+1014,John F. Kennedy,Male,Former President of the United States,Deceased
+1015,Joan Bushwell,Female,Animal Researcher,Alive
+1016,Erin,Female,Ex-soldier,Alive
+1017,Unicorn Wizard,Unknown,Unknown,Alive
+1018,Geech,Unknown,Unknown,Deceased
+1019,Defonzo Palmer,Male,Jazz Musician,Alive
+1020,"""Blow the Horn"" Kid",Male,Unknown,Alive
+1021,Milhouse's Shih Tzu,Unknown,Unknown,Alive
+1022,Wallace Brady,Male,Lawyer,Alive
+1023,Darryl Peyton,Male,Oboist,Alive
+1024,Joey Crusher,Male,Hired goon,Alive
+1025,Sequelizer,Unknown,Unknown,Unknown
+1026,Brad Goodman,Male,Self-help guru,Alive
+1027,Count Orlok,Male,Unknown,Alive
+1028,Annette,Female,Squishee supplier,Alive
+1029,Gunter,Male,Entertainer,Unknown
+1030,Ethan Foley,Male,Student,Alive
+1031,Raoul,Male,Unknown,Alive
+1032,The Beatles,Unknown,Unknown,Unknown
+1033,Werewolf Flanders,Male,Unknown,Alive
+1034,Lenny Leonard's girlfriend,Female,Unknown,Alive
+1035,Julio Franco,Male,Photographer,Alive
+1036,Dante Calabresi Jr.,Male,Mobster,Deceased
+1037,Grady,Male,Unknown,Alive
+1038,Astrid Weller,Female,Art gallery owner,Alive
+1039,Grim Reaper,Male,Personification of death,Alive
+1040,Mountain Man,Male,Gunman,Alive
+1041,Dr. Lionel Budgie,Male,Veterinarian,Alive
+1042,Warrior Comic Book Guy,Male,Computer game character  Warrior,Unknown
+1043,Gautama Buddha,Male,Founder of Buddhism,Deceased
+1044,WALL·E,Male,Unknown,Alive
+1045,Elton John (character),Male,Musician,Alive
+1046,Charcoal Briquette,Female,Supervillain,Fictional
+1047,John Lennon,Male,Singer,Deceased
+1048,Karl,Male,Homer's Personal Assistant at the Springfield Nuclear Power Plant (formerly),Alive
+1049,Julia (Friends and Family),Female,Unknown,Alive
+1050,Lisa's Classmate 1,Male,Student,Alive
+1051,Jerri Mackleberry,Female,Unknown,Alive
+1052,Ronaldo (Blame It on Lisa),Male,Actor/Dancer on Teleboobies,Alive
+1053,Orson Welles,Male,Director,Deceased
+1054,Donna,Female,Student at Springfield Elementary,Alive
+1055,Mrs. Carlson,Female,Unknown,Alive
+1056,Stanley Kubrick,Male,CinematographerEditorFilm directorProducerScreenwriter,Deceased
+1057,Leon Kompowsky,Male,Mental patient,Alive
+1058,Mr. Bont,Male,Secret agent/spy,Deceased
+1059,Dr. Olberman,Male,Scientist at the Springfield Nuclear Power Plant,Unknown
+1060,Cecile Shapiro,Female,Student,Alive
+1061,Brother Faith,Male,Faith Healer,Alive
+1062,Number 2,Male,Leader,Unknown
+1063,Player 2,Male,Video-game character used by the second player in Super Slugfest,Unknown
+1064,Frosty the Snowman,Male,Snowman,Alive
+1065,Poochie,Unknown,Unknown,Fictional
+1066,Bildorf,Male,President Springfield Junipers Golf Club,Alive
+1067,Female Long Haired Brown (tall) Purple Shirt,Female,Principal at Springfield High School,Alive
+1068,Princess,Unknown,Unknown,Alive
+1069,Repo Man 1 (couch gag),Male,Repossession,Unknown
+1070,Crystal,Female,Unknown,Alive
+1071,Manjula's Father,Male,Unknown,Alive
+1072,Grizzly Shawn,Male,Unknown,Alive
+1073,Cheech Marin,Male,Comedy actorFormer: Weather man,Alive
+1074,Ms. Mellon,Female,Teacher,Alive
+1075,Ms. Norton,Female,Librarian,Alive
+1076,Stuart (All's Fair in Oven War),Male,Unknown,Alive
+1077,Roofi,Male,Children's singer,Alive
+1078,Lowblow,Male,Hired goon,Alive
+1079,Mav,Male,Professional surfer,Alive
+1080,Agnes Flanders,Female,Unknown,Alive
+1081,Itchy & Scratchy robots,Male,Robots at Itchy & Scratchy Land,Destroyed Icon
+1082,Anger Watkins,Male,ESBN analyst,Alive
+1083,Waverly Hills Boy 3,Male,Student at Waverly Hills Elementary School,Alive
+1084,Babysitting Lady,Female,Receptionist for the Rubber Baby Buggy Bumpers Babysitting Service,Deceased
+1085,Aaron Aaronson,Male,Gossiper,Alive
+1086,Cesar,Male,Wine MakerLeather MakerPoetExpert on Mustard,Alive
+1087,Linguo,Unknown,Correctional grammar robot,Deceased
+1088,Fireman Skinner,Male,Unknown,Alive
+1089,Alfred E. Neuman,Male,Mascot for MAD Magazine,Alive
+1090,Stewie Griffin,Male,Preschool studentSupervillain (formerly)Inventor,Alive
+1091,Butterfly,Unknown,Unknown,Alive
+1092,Mr. McIntyre,Male,School guidance counselor,Alive
+1093,Kako,Female,Conceptual artist,Alive
+1094,Al Simmons,Male,Springfield Nuclear Power Plant executive,Alive
+1095,Alex Trebek (character),Male,Jeopardy! host,Deceased
+1096,Lloyd,Male,Member of the Springfield Preppers,Alive
+1097,Smilin' Joe Fission,Male,Film Strip Commentator,Fictional
+1098,Fernando Vidal,Male,Hired killer,Alive
+1099,Buddy Hodges,Male,Actor,Alive
+1100,Madison McKenna,Female,Attorney,Alive
+1101,Chris Christie,Male,55th Governor of New Jersey,Alive
+1102,Adil Hoxha,Male,StudentSpy,Alive
+1103,Lord Evilton,Unknown,Unknown,Alive
+1104,Beatrice,Female,Retired,Alive
+1105,Rosemary Chalmers,Female,Unknown,Deceased
+1106,Supporting Man,Male,Unknown,Unknown
+1107,Weird Al Yankovic,Male,Parody singer,Alive
+1108,Charles Darwin,Male,Scientist,Deceased
+1109,Unnamed Female with Brown Haired and blue sticker,Female,Unknown,Alive
+1110,Joey Kramer,Unknown,Unknown,Unknown
+1111,Debbie Pinson,Female,Former student,Alive
+1112,Lisa's Classmate 2’s Grandmother,Female,School,Deceased
+1113,Faith Crowley,Female,Patriotism Editor of Reading Digest magazine,Unknown
+1114,Chris,Male,Unknown,Alive
+1115,Gwen,Female,Waitress,Unknown
+1116,Worker,Unknown,Unknown,Fictional
+1117,Kyle's Sister,Female,Student at Springfield Elementary School,Alive
+1118,Sir Widebottom,Male,Clown,Alive
+1119,Angry Dad,Male,Unknown,Fictional
+1120,Yuma Simpson,Female,Housewife,Deceased
+1121,Andy (Bart vs. Australia),Male,Prime Minister of Australia,Alive
+1122,Black Kid With Bowl Cut,Male,Student at Springfield Elementary,Alive
+1123,Luigi (Nintendo),Male,Game Character/Plumber,Fictional
+1124,Female with Brown hair and Pink Hat,Female,Cheery Red Tomatoes,Alive
+1125,Rachel Krustofsky,Female,Unknown,Deceased
+1126,Female Teacher,Female,Formerly Teacher at Springfield Elementary School,Alive
+1127,Nick Fury,Male,Leader of The Dependables,Alive
+1128,Brendan Beiderbecke,Male,Jazz pianist,Alive
+1129,Morgan (3rd Grader),Male,Student at Springfield Elementary,Alive
+1130,Eloise,Female,Homeless,Alive
+1131,Rodan,Unknown,Unknown,Alive
+1132,Leaky Pants,Male,ClownEmployee Restaurant,Alive
+1133,Gulliver Dark,Male,Sapphire Lounge singerBackup singer for Tito Puente's Latin-American jazz band,Alive
+1134,Yutaka Nakamura,Male,Great salaryman,Alive
+1135,AMC Gremlin,Unknown,Unknown,Unknown
+1136,Colonel Leslie Hapablap,Male,Colonel of the U. S. Air Force,Alive
+1137,Leonard Nimoy,Male,"Actor, film director, poet, photographer, singer, songwriter",Deceased
+1138,Skippy Simpson,Male,Student,Alive
+1139,Smitty,Male,SPNPP employee,Alive
+1140,Sauna User 1 (couch gag),Male,Unknown,Alive
+1141,Spike Lee,Male,"Actor, writer, producer",Alive
+1142,Strawberry,Female,Unknown,Alive
+1143,Female Unnamed with brown hair and white science coat,Female,Springfield Nuclear Power Plant,Alive
+1144,Thelonious,Male,Student at West Springfield Elementary School,Alive
+1145,Hollis Hurlbut,Male,Head of the Springfield Historical Society,Alive
+1146,Abbey,Female,Unknown,Alive
+1147,Ms. Barr,Female,Springfield Elementary School Physical Education Teacher,Alive
+1148,Larry Burns,Male,Currently: UnemployedFormerly: SalesmanEmployee at the Springfield Nuclear Power Plant,Alive
+1149,Billy (actor),Male,Actor,Alive
+1150,Mr. Jones,Male,Unknown,Alive
+1151,Colin,Male,Student,Alive
+1152,Adriatica VelJohnson,Female,Political commentator,Alive
+1153,Candy Store Bandit,Male,Criminal,Alive
+1154,Michael Jackson,Male,Singer,Deceased
+1155,Buck-toothed girl,Female,Student,Alive
+1156,Multi-eyed squirrel,Unknown,Unknown,Deceased
+1157,Tom Wolfe (character),Male,Writer,Deceased
+1158,Penn Jillette,Male,Illusionist,Alive
+1159,David Letterman,Male,Talk Show Host,Unknown
+1160,Dr. Simpson,Female,Chief of Complicated Surgery at the Imbasic Care Clinic,Alive
+1161,Female brown hair with a diamond and light blue dress,Female,Bank CEO,Alive
+1162,Patches,Male,Sympathy Orphan,Alive
+1163,Devil Flanders,Male,Prince of Darkness (Devil),Alive
+1164,Count Dracula,Male,Republican Party,Alive
+1165,Dia-Betty,Female,Obese,Alive
+1166,Anthony Hopkins,Male,Actor,Alive
+1167,Just Stamp the Ticket Man,Male,Springfield Nuclear Power Plant employeeNaval Recruiter,Alive
+1168,Gus Huebner,Male,Student at Springfield Elementary School,Alive
+1169,Mad Scientist (couch gag),Male,Scientist,Unknown
+1170,Arnie Pye,Male,Channel 6 helicopter reporter,Alive
+1171,Cora,Female,Waiter,Alive
+1172,Frink's Mother,Female,Scientist,Alive
+1173,Female Unnamed with blonde and green dress,Female,Housewife and Guard at Montgomery Burns State Prison,Alive
+1174,Kitenge,Male,President of TanzaniaFormer tour guide,Alive
+1175,Buck-toothed boy,Male,Student,Alive
+1176,Taquito,Unknown,Unknown,Alive
+1177,Mother: Great Grandma Mona,Female,Unknown,Deceased
+1178,Busman,Unknown,Unknown,Unknown
+1179,Julia Roberts,Female,Actress,Alive
+1180,R2-D2,Unknown,Droid/Robot,Alive
+1181,Boy with shades,Male,Student,Alive
+1182,Hedonismbot,Male,Robot,Alive

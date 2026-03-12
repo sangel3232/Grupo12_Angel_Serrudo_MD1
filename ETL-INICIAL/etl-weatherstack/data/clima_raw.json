@@ -1,0 +1,67 @@
+[
+  {
+    "ciudad": "Bogota",
+    "pais": "Colombia",
+    "latitud": "4.600",
+    "longitud": "-74.083",
+    "temperatura": 19,
+    "sensacion_termica": 19,
+    "humedad": 68,
+    "velocidad_viento": 4,
+    "descripcion": "Light Rain, Rain Shower",
+    "fecha_extraccion": "2026-03-06T16:52:06.617192",
+    "codigo_tiempo": 296
+  },
+  {
+    "ciudad": "Medellin",
+    "pais": "Colombia",
+    "latitud": "6.291",
+    "longitud": "-75.536",
+    "temperatura": 19,
+    "sensacion_termica": 19,
+    "humedad": 68,
+    "velocidad_viento": 4,
+    "descripcion": "Partly cloudy",
+    "fecha_extraccion": "2026-03-06T16:52:08.781150",
+    "codigo_tiempo": 116
+  },
+  {
+    "ciudad": "Cali",
+    "pais": "Colombia",
+    "latitud": "3.437",
+    "longitud": "-76.523",
+    "temperatura": 25,
+    "sensacion_termica": 27,
+    "humedad": 77,
+    "velocidad_viento": 4,
+    "descripcion": "Patchy rain nearby",
+    "fecha_extraccion": "2026-03-06T16:52:11.191589",
+    "codigo_tiempo": 176
+  },
+  {
+    "ciudad": "Barranquilla",
+    "pais": "Colombia",
+    "latitud": "10.964",
+    "longitud": "-74.796",
+    "temperatura": 30,
+    "sensacion_termica": 35,
+    "humedad": 66,
+    "velocidad_viento": 35,
+    "descripcion": "Sunny",
+    "fecha_extraccion": "2026-03-06T16:52:13.822971",
+    "codigo_tiempo": 113
+  },
+  {
+    "ciudad": "Cartagena",
+    "pais": "Colombia",
+    "latitud": "10.400",
+    "longitud": "-75.514",
+    "temperatura": 31,
+    "sensacion_termica": 38,
+    "humedad": 66,
+    "velocidad_viento": 31,
+    "descripcion": "Sunny",
+    "fecha_extraccion": "2026-03-06T16:52:16.307399",
+    "codigo_tiempo": 113
+  }
+]
