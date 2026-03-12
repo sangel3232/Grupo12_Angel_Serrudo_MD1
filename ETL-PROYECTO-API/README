@@ -1,9 +1,9 @@
-# 🍩 Simpsons Data Platform
+#🍩 Simpsons Data Platform
 
 Proyecto de ingeniería de datos basado en la API de Los Simpsons.  
 El objetivo es construir un pipeline completo de datos que extrae información del universo de Los Simpsons y permite realizar análisis exploratorio, visualización y modelos de machine learning.
 
-## 📊 Dataset
+##📊 Dataset
 
 Datos obtenidos desde:
 
