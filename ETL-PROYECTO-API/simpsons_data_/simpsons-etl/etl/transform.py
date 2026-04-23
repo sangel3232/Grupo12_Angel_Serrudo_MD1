@@ -37,6 +37,16 @@ def transform_episodes(df: pd.DataFrame) -> pd.DataFrame:
 
     if "air_date" in episodes.columns:
         episodes["air_date"] = pd.to_datetime(episodes["air_date"], errors="coerce")
+    else:
+        episodes["air_date"] = pd.NaT
+
+    # Calcular number_in_season si no viene de la API
+    if "number_in_season" not in episodes.columns or episodes["number_in_season"].isna().all():
+        episodes["number_in_season"] = (
+            episodes.sort_values("episode_id")
+            .groupby("season")
+            .cumcount() + 1
+        )
 
     episodes.drop_duplicates(subset=["episode_id"], inplace=True)
     episodes.reset_index(drop=True, inplace=True)

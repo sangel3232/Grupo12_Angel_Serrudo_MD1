@@ -15,16 +15,104 @@ warnings.filterwarnings("ignore")
 
 # ── Configuración de página ───────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Simpsons Dashboard",
+    page_title="Dashboard Los Simpsons",
     page_icon="📺",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
+import base64
+
+def get_bg_base64():
+    bg_path = os.path.join(os.path.dirname(__file__), "bg.jpg")
+    with open(bg_path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+bg_b64 = get_bg_base64()
+
+st.markdown(f"""
+<style>
+.stApp {{
+    background-image: url("data:image/jpg;base64,{bg_b64}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}}
+.stApp::before {{
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.30);
+    z-index: 0;
+}}
+.block-container {{
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 12px;
+    padding: 2rem;
+}}
+[data-testid="stSidebar"] {{
+    background: rgba(15, 15, 40, 0.92) !important;
+    border-right: 2px solid #FED90F;
+}}
+h1, h2, h3 {{
+    color: #FED90F !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}}
+p, label, .stMarkdown {{
+    color: #FFFFFF !important;
+}}
+[data-testid="stMetricValue"] {{
+    color: #FED90F !important;
+    font-size: 1.8rem !important;
+}}
+[data-testid="stMetricLabel"] {{
+    color: #CCCCCC !important;
+}}
+.stDownloadButton > button {{
+    background-color: #FED90F !important;
+    color: #000000 !important;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}}
+.stDownloadButton > button:hover {{
+    background-color: #f0c800 !important;
+}}
+</style>
+""", unsafe_allow_html=True)
+
+# ── Mapas de traducción de columnas ──────────────────────────────────────────
+COLS_PERSONAJES = {
+    "character_id": "ID",
+    "name": "Nombre",
+    "gender": "Género",
+    "occupation": "Ocupación",
+    "status": "Estado",
+}
+COLS_EPISODIOS = {
+    "episode_id": "ID",
+    "name": "Título",
+    "season": "Temporada",
+    "air_date": "Fecha de emisión",
+    "number_in_season": "N° en temporada",
+}
+COLS_RATINGS = {
+    "episode_id": "ID episodio",
+    "season": "Temporada",
+    "number_in_season": "N° en temporada",
+    "viewers_millions": "Audiencia (millones)",
+    "imdb_rating": "Rating IMDB",
+    "duration_min": "Duración (min)",
+}
+GENERO_ES = {"Male": "Masculino", "Female": "Femenino", "Unknown": "Desconocido"}
+ESTADO_ES = {"Alive": "Vivo/a", "Dead": "Fallecido/a", "Unknown": "Desconocido"}
+
 # ── Conexión a BD ─────────────────────────────────────────────────────────────
 @st.cache_resource
 def get_engine():
-    # Streamlit Cloud: usa st.secrets; local: usa config.database
     try:
         from sqlalchemy import create_engine as _ce
         db_url = st.secrets.get("DATABASE_URL", None)
@@ -37,24 +125,39 @@ def get_engine():
 
 engine = get_engine()
 
-# ── Carga de datos con caché ──────────────────────────────────────────────────
+# ── Carga de datos ────────────────────────────────────────────────────────────
 @st.cache_data(ttl=300)
 def load_characters():
-    return pd.read_sql("SELECT * FROM dim_characters", engine)
+    df = pd.read_sql("SELECT * FROM dim_characters", engine)
+    df["gender"]     = df["gender"].map(GENERO_ES).fillna(df["gender"])
+    df["status"]     = df["status"].map(ESTADO_ES).fillna(df["status"])
+    return df.rename(columns=COLS_PERSONAJES)
 
 @st.cache_data(ttl=300)
 def load_episodes():
-    return pd.read_sql("SELECT * FROM dim_episodes", engine)
+    df = pd.read_sql("SELECT * FROM dim_episodes", engine)
+    df["air_date"] = df["air_date"].fillna("No disponible")
+    return df.rename(columns=COLS_EPISODIOS)
 
 @st.cache_data(ttl=300)
 def load_ratings():
-    return pd.read_sql("SELECT * FROM fact_ratings", engine)
+    return pd.read_sql("SELECT * FROM fact_ratings", engine).rename(columns=COLS_RATINGS)
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 st.sidebar.image(
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/The_Simpsons_Logo.svg/320px-The_Simpsons_Logo.svg.png",
     use_container_width=True,
 )
+st.sidebar.markdown("""
+<div style="text-align:center; font-size:80px; line-height:1; margin: -10px 0 10px 0;
+     filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.6));">
+    🍩
+</div>
+<div style="text-align:center; color:#FED90F; font-size:13px; margin-bottom:12px;
+     font-style:italic; text-shadow:1px 1px 3px black;">
+    "¡Mmm... donas!"
+</div>
+""", unsafe_allow_html=True)
 st.sidebar.title("Navegación")
 seccion = st.sidebar.radio(
     "Ir a",
@@ -66,101 +169,100 @@ try:
     df_chars = load_characters()
     df_eps   = load_episodes()
     df_rat   = load_ratings()
-    data_ok  = True
 except Exception as e:
     st.error(f"❌ No se pudo conectar a la base de datos: {e}")
     st.info("Asegúrate de que DATABASE_URL está configurado en `.env` o en los Secrets de Streamlit Cloud.")
-    data_ok = False
     st.stop()
 
 # ═════════════════════════════════════════════════════════════════════════════
 # SECCIÓN 1 — ESTADÍSTICAS GENERALES
 # ═════════════════════════════════════════════════════════════════════════════
 if seccion == "📊 Estadísticas":
-    st.title("📊 Estadísticas Generales")
+    st.title("📊 Estadísticas Generales — Los Simpsons")
 
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total personajes", len(df_chars))
-    col2.metric("Total episodios", len(df_eps))
-    col3.metric("Temporadas", int(df_eps["season"].max()) if "season" in df_eps.columns else "—")
-    col4.metric("Rating promedio IMDB", f"{df_rat['imdb_rating'].mean():.2f}" if not df_rat.empty else "—")
+    col1.metric("Total de personajes", len(df_chars))
+    col2.metric("Total de episodios", len(df_eps))
+    col3.metric("Temporadas", int(df_eps["Temporada"].max()) if "Temporada" in df_eps.columns else "—")
+    col4.metric("Rating IMDB promedio", f"{df_rat['Rating IMDB'].mean():.2f}" if not df_rat.empty else "—")
 
     st.divider()
 
-    # Rating promedio por temporada
-    if not df_rat.empty and "season" in df_rat.columns:
-        avg_rating = df_rat.groupby("season")["imdb_rating"].mean().reset_index()
+    if not df_rat.empty and "Temporada" in df_rat.columns:
+        avg_rating = df_rat.groupby("Temporada")["Rating IMDB"].mean().reset_index()
         fig = px.line(
-            avg_rating, x="season", y="imdb_rating",
+            avg_rating, x="Temporada", y="Rating IMDB",
             title="Rating IMDB promedio por temporada",
-            labels={"season": "Temporada", "imdb_rating": "Rating IMDB"},
+            labels={"Temporada": "Temporada", "Rating IMDB": "Rating IMDB promedio"},
             markers=True, color_discrete_sequence=["#FED90F"],
         )
-        fig.update_layout(plot_bgcolor="#1a1a2e", paper_bgcolor="#1a1a2e",
-                          font_color="white")
+        fig.update_layout(plot_bgcolor="#1a1a2e", paper_bgcolor="#1a1a2e", font_color="white")
         st.plotly_chart(fig, use_container_width=True)
 
     col_a, col_b = st.columns(2)
     with col_a:
-        # Viewers por temporada
-        if "viewers_millions" in df_rat.columns:
-            avg_viewers = df_rat.groupby("season")["viewers_millions"].mean().reset_index()
+        if "Audiencia (millones)" in df_rat.columns:
+            avg_viewers = df_rat.groupby("Temporada")["Audiencia (millones)"].mean().reset_index()
             fig2 = px.bar(
-                avg_viewers, x="season", y="viewers_millions",
-                title="Audiencia promedio (millones) por temporada",
-                labels={"season": "Temporada", "viewers_millions": "Viewers (M)"},
-                color="viewers_millions", color_continuous_scale="YlOrRd",
+                avg_viewers, x="Temporada", y="Audiencia (millones)",
+                title="Audiencia promedio por temporada (millones de espectadores)",
+                labels={"Temporada": "Temporada", "Audiencia (millones)": "Millones de espectadores"},
+                color="Audiencia (millones)", color_continuous_scale="YlOrRd",
             )
+            fig2.update_layout(coloraxis_colorbar_title="Millones")
             st.plotly_chart(fig2, use_container_width=True)
 
     with col_b:
-        # Distribución de ratings
         fig3 = px.histogram(
-            df_rat, x="imdb_rating", nbins=20,
-            title="Distribución de ratings IMDB",
-            labels={"imdb_rating": "Rating IMDB"},
+            df_rat, x="Rating IMDB", nbins=20,
+            title="Distribución de ratings IMDB de todos los episodios",
+            labels={"Rating IMDB": "Rating IMDB", "count": "Cantidad de episodios"},
             color_discrete_sequence=["#FED90F"],
         )
+        fig3.update_layout(yaxis_title="Cantidad de episodios")
         st.plotly_chart(fig3, use_container_width=True)
 
 # ═════════════════════════════════════════════════════════════════════════════
 # SECCIÓN 2 — PERSONAJES
 # ═════════════════════════════════════════════════════════════════════════════
 elif seccion == "👥 Personajes":
-    st.title("👥 Personajes")
+    st.title("👥 Personajes de Los Simpsons")
 
     col1, col2 = st.columns(2)
     with col1:
-        gender_filter = st.multiselect(
-            "Filtrar por género",
-            options=df_chars["gender"].dropna().unique().tolist(),
-        )
+        genero_opts = df_chars["Género"].dropna().unique().tolist()
+        genero_filter = st.multiselect("Filtrar por género", options=genero_opts)
     with col2:
-        status_opts = df_chars["status"].dropna().unique().tolist() if "status" in df_chars.columns else []
-        status_filter = st.multiselect("Filtrar por estado", options=status_opts)
+        estado_opts = df_chars["Estado"].dropna().unique().tolist() if "Estado" in df_chars.columns else []
+        estado_filter = st.multiselect("Filtrar por estado", options=estado_opts)
 
-    filtered = df_chars.copy()
-    if gender_filter:
-        filtered = filtered[filtered["gender"].isin(gender_filter)]
-    if status_filter:
-        filtered = filtered[filtered["status"].isin(status_filter)]
+    filtrado = df_chars.copy()
+    if genero_filter:
+        filtrado = filtrado[filtrado["Género"].isin(genero_filter)]
+    if estado_filter:
+        filtrado = filtrado[filtrado["Estado"].isin(estado_filter)]
 
-    st.dataframe(filtered, use_container_width=True)
+    st.markdown(f"**{len(filtrado)} personajes encontrados**")
+    st.dataframe(filtrado, use_container_width=True, hide_index=True)
 
     col3, col4 = st.columns(2)
     with col3:
+        conteo_genero = filtrado["Género"].value_counts().reset_index()
+        conteo_genero.columns = ["Género", "Cantidad"]
         fig = px.bar(
-            filtered["gender"].value_counts().reset_index(),
-            x="gender", y="count",
-            title="Personajes por género",
-            color="gender", color_discrete_sequence=px.colors.qualitative.Set2,
+            conteo_genero, x="Género", y="Cantidad",
+            title="Cantidad de personajes por género",
+            color="Género", color_discrete_sequence=px.colors.qualitative.Set2,
+            labels={"Género": "Género", "Cantidad": "Cantidad de personajes"},
         )
         st.plotly_chart(fig, use_container_width=True)
     with col4:
-        top_occ = filtered["occupation"].value_counts().head(10).reset_index()
+        top_occ = filtrado["Ocupación"].value_counts().head(10).reset_index()
+        top_occ.columns = ["Ocupación", "Cantidad"]
         fig2 = px.bar(
-            top_occ, x="count", y="occupation", orientation="h",
-            title="Top 10 ocupaciones",
+            top_occ, x="Cantidad", y="Ocupación", orientation="h",
+            title="Top 10 ocupaciones más frecuentes",
+            labels={"Ocupación": "Ocupación", "Cantidad": "Cantidad de personajes"},
             color_discrete_sequence=["#FED90F"],
         )
         st.plotly_chart(fig2, use_container_width=True)
@@ -169,39 +271,47 @@ elif seccion == "👥 Personajes":
 # SECCIÓN 3 — EPISODIOS
 # ═════════════════════════════════════════════════════════════════════════════
 elif seccion == "📺 Episodios":
-    st.title("📺 Episodios")
+    st.title("📺 Episodios de Los Simpsons")
 
-    season_opts = sorted(df_eps["season"].dropna().unique().tolist()) if "season" in df_eps.columns else []
-    season_filter = st.multiselect("Filtrar por temporada", options=season_opts)
+    temp_opts = sorted(df_eps["Temporada"].dropna().unique().tolist()) if "Temporada" in df_eps.columns else []
+    temp_filter = st.multiselect("Filtrar por temporada", options=temp_opts)
 
-    filtered_eps = df_eps.copy()
-    if season_filter:
-        filtered_eps = filtered_eps[filtered_eps["season"].isin(season_filter)]
+    filtrado_eps = df_eps.copy()
+    if temp_filter:
+        filtrado_eps = filtrado_eps[filtrado_eps["Temporada"].isin(temp_filter)]
 
-    st.dataframe(filtered_eps, use_container_width=True)
+    st.markdown(f"**{len(filtrado_eps)} episodios encontrados**")
+    st.dataframe(filtrado_eps, use_container_width=True, hide_index=True)
 
     col1, col2 = st.columns(2)
     with col1:
-        if "season" in filtered_eps.columns:
-            eps_count = filtered_eps["season"].value_counts().sort_index().reset_index()
+        if "Temporada" in filtrado_eps.columns:
+            conteo_eps = filtrado_eps["Temporada"].value_counts().sort_index().reset_index()
+            conteo_eps.columns = ["Temporada", "Episodios"]
             fig = px.bar(
-                eps_count, x="season", y="count",
-                title="Episodios por temporada",
-                labels={"season": "Temporada", "count": "Episodios"},
+                conteo_eps, x="Temporada", y="Episodios",
+                title="Cantidad de episodios por temporada",
+                labels={"Temporada": "Temporada", "Episodios": "Cantidad de episodios"},
                 color_discrete_sequence=["#FED90F"],
             )
             st.plotly_chart(fig, use_container_width=True)
     with col2:
-        if not df_rat.empty and "season" in df_rat.columns:
-            merged = filtered_eps.merge(df_rat[["episode_id","imdb_rating","viewers_millions"]], on="episode_id", how="left")
-            if "imdb_rating" in merged.columns:
+        if not df_rat.empty:
+            rat_renamed = df_rat.rename(columns={"ID episodio": "ID"})
+            eps_renamed = filtrado_eps.rename(columns={"ID": "ID"})
+            merged = eps_renamed.merge(
+                rat_renamed[["ID", "Rating IMDB", "Audiencia (millones)"]],
+                on="ID", how="left"
+            )
+            if "Rating IMDB" in merged.columns:
                 fig2 = px.scatter(
-                    merged, x="season", y="imdb_rating",
-                    title="Rating IMDB por episodio",
-                    labels={"season": "Temporada", "imdb_rating": "Rating IMDB"},
-                    hover_data=["name"] if "name" in merged.columns else None,
-                    color="imdb_rating", color_continuous_scale="RdYlGn",
+                    merged, x="Temporada", y="Rating IMDB",
+                    title="Rating IMDB por episodio según temporada",
+                    labels={"Temporada": "Temporada", "Rating IMDB": "Rating IMDB"},
+                    hover_data=["Título"] if "Título" in merged.columns else None,
+                    color="Rating IMDB", color_continuous_scale="RdYlGn",
                 )
+                fig2.update_layout(coloraxis_colorbar_title="Rating")
                 st.plotly_chart(fig2, use_container_width=True)
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -210,179 +320,203 @@ elif seccion == "📺 Episodios":
 elif seccion == "🤖 Regresión Lineal":
     st.title("🤖 Modelo de Regresión Lineal")
     st.markdown(
-        "**Variable objetivo:** `imdb_rating`  \n"
-        "**Predictores:** `viewers_millions`, `season`, `duration_min`, `number_in_season`"
+        "**Variable objetivo:** Rating IMDB del episodio  \n"
+        "**Variables predictoras:** Audiencia (millones), Temporada, Duración (min), N° en temporada"
     )
 
     if df_rat.empty:
-        st.warning("No hay datos en fact_ratings. Ejecuta el pipeline primero.")
+        st.warning("No hay datos disponibles. Ejecuta el pipeline primero.")
         st.stop()
 
-    FEATURES = [c for c in ["viewers_millions", "season", "duration_min", "number_in_season"] if c in df_rat.columns]
-    TARGET = "imdb_rating"
+    # df_rat ya tiene columnas en español gracias al rename en load_ratings()
+    # Solo verificamos que existan
+    FEATURES_ES = [c for c in ["Audiencia (millones)", "Temporada", "Duración (min)", "N° en temporada"] if c in df_rat.columns]
+    TARGET_ES = "Rating IMDB"
+    df_modelo = df_rat
 
-    df_model = df_rat[FEATURES + [TARGET]].dropna()
+    df_model = df_modelo[FEATURES_ES + [TARGET_ES]].dropna()
 
     if len(df_model) < 10:
         st.warning("Datos insuficientes para entrenar el modelo.")
         st.stop()
 
-    X = df_model[FEATURES]
-    y = df_model[TARGET]
+    X = df_model[FEATURES_ES]
+    y = df_model[TARGET_ES]
 
-    # ── Parámetros del modelo ─────────────────────────────────────────────
-    st.sidebar.subheader("Parámetros del modelo")
-    test_size = st.sidebar.slider("Tamaño del conjunto de prueba", 0.1, 0.4, 0.2, 0.05)
-    random_state = st.sidebar.number_input("Random state", value=42, step=1)
+    st.sidebar.subheader("⚙️ Parámetros del modelo")
+    test_size    = st.sidebar.slider("Proporción de datos de prueba", 0.1, 0.4, 0.2, 0.05,
+                                     help="Porcentaje de datos usados para evaluar el modelo")
+    random_state = st.sidebar.number_input("Semilla aleatoria", value=42, step=1,
+                                           help="Controla la reproducibilidad del experimento")
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=test_size, random_state=int(random_state)
-    )
-    scaler = StandardScaler()
-    X_train_sc = scaler.fit_transform(X_train)
-    X_test_sc  = scaler.transform(X_test)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=int(random_state))
+    scaler       = StandardScaler()
+    X_train_sc   = scaler.fit_transform(X_train)
+    X_test_sc    = scaler.transform(X_test)
 
-    # ── Entrenar modelos ──────────────────────────────────────────────────
-    # Simple: mejor predictor por correlación
-    best_pred = X.corrwith(y).abs().idxmax()
+    # Mejor predictor simple
+    mejor_pred = X.corrwith(y).abs().idxmax()
     reg_simple = LinearRegression()
-    reg_simple.fit(X_train[[best_pred]], y_train)
-    y_pred_simple = reg_simple.predict(X_test[[best_pred]])
+    reg_simple.fit(X_train[[mejor_pred]], y_train)
+    y_pred_simple = reg_simple.predict(X_test[[mejor_pred]])
 
-    # Múltiple
+    # Modelo múltiple
     reg_mult = LinearRegression()
     reg_mult.fit(X_train_sc, y_train)
     y_pred_mult = reg_mult.predict(X_test_sc)
 
-    # ── Métricas ──────────────────────────────────────────────────────────
     def metricas(y_true, y_pred, nombre):
         return {
             "Modelo": nombre,
-            "R²": round(r2_score(y_true, y_pred), 4),
-            "RMSE": round(np.sqrt(mean_squared_error(y_true, y_pred)), 4),
-            "MAE": round(mean_absolute_error(y_true, y_pred), 4),
+            "R² (coef. determinación)": round(r2_score(y_true, y_pred), 4),
+            "RMSE (error cuadrático medio)": round(np.sqrt(mean_squared_error(y_true, y_pred)), 4),
+            "MAE (error absoluto medio)": round(mean_absolute_error(y_true, y_pred), 4),
         }
 
     tabla = pd.DataFrame([
-        metricas(y_test, y_pred_simple, f"Simple ({best_pred})"),
-        metricas(y_test, y_pred_mult,   "Múltiple"),
+        metricas(y_test, y_pred_simple, f"Simple — {mejor_pred}"),
+        metricas(y_test, y_pred_mult,   "Múltiple — todas las variables"),
     ])
 
-    st.subheader("📋 Tabla comparativa de métricas")
+    st.subheader("📋 Comparación de modelos")
+    st.caption("R² más alto y RMSE/MAE más bajos indican mejor desempeño del modelo")
     st.dataframe(tabla, use_container_width=True, hide_index=True)
 
     col1, col2, col3 = st.columns(3)
-    for col, met in zip([col1, col2, col3], ["R²", "RMSE", "MAE"]):
+    metricas_cols = ["R² (coef. determinación)", "RMSE (error cuadrático medio)", "MAE (error absoluto medio)"]
+    titulos = ["R² — Coeficiente de determinación", "RMSE — Error cuadrático medio", "MAE — Error absoluto medio"]
+    for col, met, tit in zip([col1, col2, col3], metricas_cols, titulos):
         fig = go.Figure(go.Bar(
-            x=tabla["Modelo"], y=tabla[met],
+            x=["Modelo Simple", "Modelo Múltiple"],
+            y=tabla[met],
             marker_color=["#2196F3", "#4CAF50"],
             text=tabla[met], textposition="outside",
         ))
-        fig.update_layout(title=met, yaxis_title=met, showlegend=False,
-                          height=300, margin=dict(t=40, b=20))
+        fig.update_layout(title=tit, yaxis_title="Valor", showlegend=False,
+                          height=320, margin=dict(t=50, b=20))
         col.plotly_chart(fig, use_container_width=True)
 
     st.divider()
 
-    # ── Gráficas de ajuste ────────────────────────────────────────────────
     col_a, col_b = st.columns(2)
-
     with col_a:
-        st.subheader(f"Regresión Simple: imdb_rating ~ {best_pred}")
+        st.subheader(f"Regresión Simple: Rating IMDB ~ {mejor_pred}")
+        st.caption("Línea roja = recta de regresión ajustada")
         fig_s = px.scatter(
-            x=X_test[best_pred], y=y_test,
-            labels={"x": best_pred, "y": "imdb_rating"},
+            x=X_test[mejor_pred], y=y_test,
+            labels={"x": mejor_pred, "y": "Rating IMDB real"},
             opacity=0.5, color_discrete_sequence=["#2196F3"],
         )
-        x_line = np.linspace(X_test[best_pred].min(), X_test[best_pred].max(), 100)
-        m = reg_simple.coef_[0]; b = reg_simple.intercept_
-        fig_s.add_scatter(x=x_line, y=m * x_line + b, mode="lines",
-                          line=dict(color="red", width=2), name="Regresión")
+        x_line = np.linspace(X_test[mejor_pred].min(), X_test[mejor_pred].max(), 100)
+        m = reg_simple.coef_[0]; b_int = reg_simple.intercept_
+        fig_s.add_scatter(x=x_line, y=m * x_line + b_int, mode="lines",
+                          line=dict(color="red", width=2), name="Línea de regresión")
+        fig_s.update_layout(legend_title="")
         st.plotly_chart(fig_s, use_container_width=True)
 
     with col_b:
-        st.subheader("Real vs Predicho — Modelo Múltiple")
+        st.subheader("Rating real vs Rating predicho — Modelo Múltiple")
+        st.caption("Puntos sobre la línea roja = predicción perfecta")
         fig_m = px.scatter(
             x=y_test, y=y_pred_mult,
-            labels={"x": "imdb_rating real", "y": "imdb_rating predicho"},
+            labels={"x": "Rating IMDB real", "y": "Rating IMDB predicho"},
             opacity=0.5, color_discrete_sequence=["#4CAF50"],
         )
         lim = [min(y_test.min(), y_pred_mult.min()), max(y_test.max(), y_pred_mult.max())]
         fig_m.add_scatter(x=lim, y=lim, mode="lines",
-                          line=dict(color="red", dash="dash"), name="Línea perfecta")
+                          line=dict(color="red", dash="dash"), name="Predicción perfecta")
+        fig_m.update_layout(legend_title="")
         st.plotly_chart(fig_m, use_container_width=True)
 
-    # ── Coeficientes ──────────────────────────────────────────────────────
-    st.subheader("Coeficientes del modelo múltiple")
+    st.subheader("Importancia de cada variable en el modelo múltiple")
+    st.caption("Variables con coeficiente positivo aumentan el rating; negativo lo disminuyen")
     coef_df = pd.DataFrame({
-        "Variable": FEATURES,
-        "Coeficiente": reg_mult.coef_,
-    }).sort_values("Coeficiente")
+        "Variable": FEATURES_ES,
+        "Coeficiente estandarizado": reg_mult.coef_,
+    }).sort_values("Coeficiente estandarizado")
 
     fig_coef = px.bar(
-        coef_df, x="Coeficiente", y="Variable", orientation="h",
-        color="Coeficiente", color_continuous_scale="RdYlGn",
-        title="Importancia de variables (coeficientes estandarizados)",
+        coef_df, x="Coeficiente estandarizado", y="Variable", orientation="h",
+        color="Coeficiente estandarizado", color_continuous_scale="RdYlGn",
+        title="Coeficientes del modelo (estandarizados)",
+        labels={"Coeficiente estandarizado": "Coeficiente", "Variable": "Variable predictora"},
     )
     fig_coef.add_vline(x=0, line_dash="dash", line_color="white")
+    fig_coef.update_layout(coloraxis_colorbar_title="Valor")
     st.plotly_chart(fig_coef, use_container_width=True)
 
-    # ── Predictor interactivo ─────────────────────────────────────────────
     st.divider()
-    st.subheader("🔮 Predictor interactivo")
-    st.markdown("Ingresa valores para predecir el rating IMDB de un episodio:")
+    st.subheader("🔮 Predictor interactivo de Rating IMDB")
+    st.markdown("Ajusta los valores y el modelo estimará el rating del episodio:")
 
-    pred_cols = st.columns(len(FEATURES))
+    pred_cols = st.columns(len(FEATURES_ES))
     input_vals = {}
     defaults = {
-        "viewers_millions": float(df_rat["viewers_millions"].mean()),
-        "season": int(df_rat["season"].median()),
-        "duration_min": 22,
-        "number_in_season": 10,
+        "Audiencia (millones)": float(df_rat["Audiencia (millones)"].mean()),
+        "Temporada": int(df_rat["Temporada"].median()),
+        "Duración (min)": 22,
+        "N° en temporada": 10,
     }
-    for col, feat in zip(pred_cols, FEATURES):
-        if feat == "duration_min":
-            input_vals[feat] = col.selectbox("duration_min", [22, 44], index=0)
-        elif feat == "season":
-            input_vals[feat] = col.slider(feat, 1, 35, defaults.get(feat, 1))
-        elif feat == "number_in_season":
-            input_vals[feat] = col.slider(feat, 1, 25, defaults.get(feat, 10))
+    etiquetas = {
+        "Audiencia (millones)": "Audiencia (millones)",
+        "Temporada": "Temporada (1-35)",
+        "Duración (min)": "Duración del episodio",
+        "N° en temporada": "Número en la temporada",
+    }
+    for col, feat in zip(pred_cols, FEATURES_ES):
+        if feat == "Duración (min)":
+            input_vals[feat] = col.selectbox(etiquetas[feat], [22, 44], index=0,
+                                              help="22 min = episodio normal, 44 min = especial")
+        elif feat == "Temporada":
+            input_vals[feat] = col.slider(etiquetas[feat], 1, 35, defaults.get(feat, 1))
+        elif feat == "N° en temporada":
+            input_vals[feat] = col.slider(etiquetas[feat], 1, 25, defaults.get(feat, 10))
         else:
-            input_vals[feat] = col.number_input(feat, value=float(defaults.get(feat, 0.0)), step=0.5)
+            input_vals[feat] = col.number_input(etiquetas[feat], value=float(defaults.get(feat, 0.0)), step=0.5,
+                                                 help="Millones de espectadores que vieron el episodio")
 
-    X_input = pd.DataFrame([input_vals])[FEATURES]
+    X_input    = pd.DataFrame([input_vals])[FEATURES_ES]
     X_input_sc = scaler.transform(X_input)
-    pred_rating = reg_mult.predict(X_input_sc)[0]
-    pred_rating = float(np.clip(pred_rating, 1.0, 10.0))
+    pred_rating = float(np.clip(reg_mult.predict(X_input_sc)[0], 1.0, 10.0))
 
-    st.metric("Rating IMDB predicho", f"{pred_rating:.2f} / 10")
+    col_res1, col_res2 = st.columns([1, 3])
+    col_res1.metric("⭐ Rating IMDB estimado", f"{pred_rating:.2f} / 10")
+    if pred_rating >= 8.0:
+        col_res2.success("🟢 Episodio con rating alto — muy bien recibido por la audiencia")
+    elif pred_rating >= 6.5:
+        col_res2.info("🟡 Episodio con rating medio — aceptable para la audiencia")
+    else:
+        col_res2.warning("🔴 Episodio con rating bajo — poco valorado por la audiencia")
 
 # ═════════════════════════════════════════════════════════════════════════════
 # SECCIÓN 5 — DATOS Y EXPORTAR
 # ═════════════════════════════════════════════════════════════════════════════
 elif seccion == "📥 Datos":
-    st.title("📥 Datos y Exportar")
+    st.title("📥 Datos completos y exportación")
 
-    tab1, tab2, tab3 = st.tabs(["Personajes", "Episodios", "Ratings"])
+    tab1, tab2, tab3 = st.tabs(["👥 Personajes", "📺 Episodios", "⭐ Ratings"])
 
     with tab1:
-        st.dataframe(df_chars, use_container_width=True)
+        st.markdown(f"**{len(df_chars)} personajes registrados**")
+        st.dataframe(df_chars, use_container_width=True, hide_index=True)
         st.download_button(
-            "⬇️ Descargar personajes CSV",
+            "⬇️ Descargar personajes en CSV",
             df_chars.to_csv(index=False).encode("utf-8"),
-            "characters.csv", "text/csv",
+            "personajes_simpsons.csv", "text/csv",
         )
     with tab2:
-        st.dataframe(df_eps, use_container_width=True)
+        st.markdown(f"**{len(df_eps)} episodios registrados**")
+        st.dataframe(df_eps, use_container_width=True, hide_index=True)
         st.download_button(
-            "⬇️ Descargar episodios CSV",
+            "⬇️ Descargar episodios en CSV",
             df_eps.to_csv(index=False).encode("utf-8"),
-            "episodes.csv", "text/csv",
+            "episodios_simpsons.csv", "text/csv",
         )
     with tab3:
-        st.dataframe(df_rat, use_container_width=True)
+        st.markdown(f"**{len(df_rat)} registros de ratings**")
+        st.dataframe(df_rat, use_container_width=True, hide_index=True)
         st.download_button(
-            "⬇️ Descargar ratings CSV",
+            "⬇️ Descargar ratings en CSV",
             df_rat.to_csv(index=False).encode("utf-8"),
-            "ratings.csv", "text/csv",
+            "ratings_simpsons.csv", "text/csv",
         )
