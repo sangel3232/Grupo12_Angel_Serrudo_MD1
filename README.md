@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ETL Weatherstack - Extracción de Datos de Clima
 
 Proyecto de Minería de Datos que implementa un pipeline ETL completo para 
@@ -120,3 +121,26 @@ Si deseas mejorar este proyecto:
 ---
 **Última actualización:** Febrero 2026
 **Estado:** En desarrollo ✅
+=======
+# 🌦 ETL WeatherStack - Proyecto de Ingeniería de Datos
+
+##  Descripción
+
+Este proyecto implementa un proceso ETL (Extract, Transform, Load) utilizando la API de WeatherStack para obtener datos climáticos de diferentes ciudades de Colombia.
+
+El sistema extrae información meteorológica en tiempo real, la transforma agregando nuevos cálculos y genera archivos estructurados para su análisis y visualización.
+
+---
+
+##  Arquitectura del Proyecto
+
+El flujo ETL está compuesto por tres fases principales:
+
+1. **Extract** → `extractor.py`
+2. **Transform** → `transformador.py`
+3. **Load / Visualización** → `visualizador.py`
+
+---
+
+## Estructura del Proyecto
+>>>>>>> 241188abc411eb092c9a23228d311ed7b84787b6

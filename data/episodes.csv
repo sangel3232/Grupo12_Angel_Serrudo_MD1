@@ -1,0 +1,769 @@
+episode_id,name,season
+1,Simpsons Roasting on an Open Fire,1
+2,Bart the Genius,1
+3,Homer's Odyssey,1
+4,There's No Disgrace Like Home,1
+5,Bart the General,1
+6,Moaning Lisa,1
+7,The Call of the Simpsons,1
+8,The Telltale Head,1
+9,Life on the Fast Lane,1
+10,Homer's Night Out,1
+11,The Crepes of Wrath,1
+12,Krusty Gets Busted,1
+13,Some Enchanted Evening,1
+14,"Bart Gets an ""F""",2
+15,Simpson and Delilah,2
+16,Treehouse of Horror,2
+17,Two Cars in Every Garage and Three Eyes on Every Fish,2
+18,Dancin' Homer,2
+19,Dead Putting Society,2
+20,Bart vs. Thanksgiving,2
+21,Bart the Daredevil,2
+22,Itchy & Scratchy & Marge,2
+23,Bart Gets Hit by a Car,2
+24,"One Fish, Two Fish, Blowfish, Blue Fish",2
+25,The Way We Was,2
+26,Homer vs. Lisa and the 8th Commandment,2
+27,Principal Charming,2
+28,"Oh Brother, Where Art Thou?",2
+29,Bart's Dog Gets an F,2
+30,Old Money,2
+31,Brush with Greatness,2
+32,Lisa's Substitute,2
+33,The War of the Simpsons,2
+34,Three Men and a Comic Book,2
+35,Blood Feud,2
+36,Stark Raving Dad,3
+37,Mr. Lisa Goes to Washington,3
+38,When Flanders Failed,3
+39,Bart the Murderer,3
+40,Homer Defined,3
+41,"Like Father, Like Clown",3
+42,Treehouse of Horror II,3
+43,Lisa's Pony,3
+44,Saturdays of Thunder,3
+45,Flaming Moe's,3
+46,Burns Verkaufen der Kraftwerk (Burns to Sell the Power Plant),3
+47,I Married Marge,3
+48,Radio Bart,3
+49,Lisa the Greek,3
+50,Homer Alone,3
+51,Bart the Lover,3
+52,Homer at the Bat,3
+53,Separate Vocations,3
+54,Dog of Death,3
+55,Colonel Homer,3
+56,Black Widower,3
+57,The Otto Show,3
+58,Bart's Friend Falls in Love,3
+59,"Brother, Can You Spare Two Dimes?",3
+60,Kamp Krusty,4
+61,A Streetcar Named Marge,4
+62,Homer the Heretic,4
+63,Lisa the Beauty Queen,4
+64,Treehouse of Horror III,4
+65,Itchy & Scratchy: The Movie,4
+66,Marge Gets a Job,4
+67,New Kid on the Block,4
+68,Mr. Plow,4
+69,Lisa's First Word,4
+70,Homer's Triple Bypass,4
+71,Marge vs. the Monorail,4
+72,Selma's Choice,4
+73,Brother from the Same Planet,4
+74,I Love Lisa,4
+75,Duffless,4
+76,Last Exit to Springfield,4
+77,So It's Come to This: A Simpsons Clip Show,4
+78,The Front,4
+79,Whacking Day,4
+80,Marge in Chains,4
+81,Krusty Gets Kancelled,4
+82,Homer's Barbershop Quartet,5
+83,Cape Feare,5
+84,Homer Goes to College,5
+85,Rosebud,5
+86,Treehouse of Horror IV,5
+87,Marge on the Lam,5
+88,Bart's Inner Child,5
+89,Boy-Scoutz 'n the Hood,5
+90,The Last Temptation of Homer,5
+91,"$pringfield (Or, How I Learned to Stop Worrying and Love Legalized Gambling)",5
+92,Homer the Vigilante,5
+93,Bart Gets Famous,5
+94,Homer and Apu,5
+95,Lisa vs. Malibu Stacy,5
+96,Deep Space Homer,5
+97,Homer Loves Flanders,5
+98,Bart Gets an Elephant,5
+99,Burns' Heir,5
+100,Sweet Seymour Skinner's Baadasssss Song,5
+101,The Boy Who Knew Too Much,5
+102,Lady Bouvier's Lover,5
+103,Secrets of a Successful Marriage,5
+104,Bart of Darkness,6
+105,Lisa's Rival,6
+106,Another Simpsons Clip Show,6
+107,Itchy & Scratchy Land,6
+108,Sideshow Bob Roberts,6
+109,Treehouse of Horror V,6
+110,Bart's Girlfriend,6
+111,Lisa on Ice,6
+112,Homer Badman,6
+113,Grampa vs. Sexual Inadequacy,6
+114,Fear of Flying,6
+115,Homer the Great,6
+116,And Maggie Makes Three,6
+117,Bart's Comet,6
+118,Homie the Clown,6
+119,Bart vs. Australia,6
+120,Homer vs. Patty and Selma,6
+121,A Star is Burns,6
+122,Lisa's Wedding,6
+123,Two Dozen and One Greyhounds,6
+124,The PTA Disbands,6
+125,'Round Springfield,6
+126,The Springfield Connection,6
+127,Lemon of Troy,6
+128,Who Shot Mr. Burns? (Part One),6
+129,Who Shot Mr. Burns? (Part Two),7
+130,Radioactive Man,7
+131,Home Sweet Homediddly-Dum-Doodily,7
+132,Bart Sells His Soul,7
+133,Lisa the Vegetarian,7
+134,Treehouse of Horror VI,7
+135,King-Size Homer,7
+136,Mother Simpson,7
+137,Sideshow Bob's Last Gleaming,7
+138,The Simpsons 138th Episode Spectacular,7
+139,Marge Be Not Proud,7
+140,Team Homer,7
+141,Two Bad Neighbors,7
+142,Scenes from the Class Struggle in Springfield,7
+143,Bart the Fink,7
+144,Lisa the Iconoclast,7
+145,Homer the Smithers,7
+146,The Day the Violence Died,7
+147,A Fish Called Selma,7
+148,Bart on the Road,7
+149,22 Short Films About Springfield,7
+150,"Raging Abe Simpson and His Grumbling Grandson in ""The Curse of the Flying Hellfish""",7
+151,Much Apu About Nothing,7
+152,Homerpalooza,7
+153,Summer of 4 Ft. 2,7
+154,Treehouse of Horror VII,8
+155,You Only Move Twice,8
+156,The Homer They Fall,8
+157,"Burns, Baby Burns",8
+158,Bart After Dark,8
+159,A Milhouse Divided,8
+160,Lisa's Date with Density,8
+161,Hurricane Neddy,8
+162,El Viaje Misterioso de Nuestro Jomer (The Mysterious Voyage of Homer),8
+163,The Springfield Files,8
+164,The Twisted World of Marge Simpson,8
+165,Mountain of Madness,8
+166,Simpsoncalifragilisticexpiala(Annoyed Grunt)cious,8
+167,The Itchy & Scratchy & Poochie Show,8
+168,Homer's Phobia,8
+169,Brother from Another Series,8
+170,"My Sister, My Sitter",8
+171,Homer vs. the Eighteenth Amendment,8
+172,Grade School Confidential,8
+173,The Canine Mutiny,8
+174,The Old Man and the Lisa,8
+175,In Marge We Trust,8
+176,Homer's Enemy,8
+177,The Simpsons Spin-Off Showcase,8
+178,The Secret War of Lisa Simpson,8
+179,The City of New York vs. Homer Simpson,9
+180,The Principal and the Pauper,9
+181,Lisa's Sax,9
+182,Treehouse of Horror VIII,9
+183,The Cartridge Family,9
+184,Bart Star,9
+185,The Two Mrs. Nahasapeemapetilons,9
+186,Lisa the Skeptic,9
+187,Realty Bites,9
+188,Miracle on Evergreen Terrace,9
+189,"All Singing, All Dancing",9
+190,Bart Carny,9
+191,The Joy of Sect,9
+192,Das Bus,9
+193,The Last Temptation of Krust,9
+194,Dumbbell Indemnity,9
+195,Lisa the Simpson,9
+196,This Little Wiggy,9
+197,Simpson Tide,9
+198,The Trouble with Trillions,9
+199,Girly Edition,9
+200,Trash of the Titans,9
+201,King of the Hill,9
+202,Lost Our Lisa,9
+203,Natural Born Kissers,9
+204,Lard of the Dance,10
+205,The Wizard of Evergreen Terrace,10
+206,Bart the Mother,10
+207,Treehouse of Horror IX,10
+208,When You Dish Upon a Star,10
+209,D'oh-in' in the Wind,10
+210,"Lisa Gets an ""A""",10
+211,"Homer Simpson in: ""Kidney Trouble""",10
+212,Mayored to the Mob,10
+213,Viva Ned Flanders,10
+214,Wild Barts Can't Be Broken,10
+215,"Sunday, Cruddy Sunday",10
+216,Homer to the Max,10
+217,I'm with Cupid,10
+218,"Marge Simpson in: ""Screaming Yellow Honkers""",10
+219,Make Room for Lisa,10
+220,Maximum Homerdrive,10
+221,Simpsons Bible Stories,10
+222,Mom and Pop Art,10
+223,"The Old Man and the ""C"" Student",10
+224,Monty Can't Buy Me Love,10
+225,They Saved Lisa's Brain,10
+226,Thirty Minutes Over Tokyo,10
+227,Beyond Blunderdome,11
+228,Brother's Little Helper,11
+229,Guess Who's Coming to Criticize Dinner?,11
+230,Treehouse of Horror X,11
+231,E-I-E-I-D'oh,11
+232,"Hello Gutter, Hello Fadder",11
+233,Eight Misbehavin',11
+234,"Take My Wife, Sleaze",11
+235,Grift of the Magi,11
+236,Little Big Mom,11
+237,Faith Off,11
+238,The Mansion Family,11
+239,Saddlesore Galactica,11
+240,"Alone Again, Natura-Diddily",11
+241,Missionary: Impossible,11
+242,Pygmoelian,11
+243,Bart to the Future,11
+244,Days of Wine and D'oh'ses,11
+245,Kill the Alligator and Run,11
+246,Last Tap Dance in Springfield,11
+247,"It's a Mad, Mad, Mad, Mad Marge",11
+248,Behind the Laughter,11
+249,Treehouse of Horror XI,12
+250,A Tale of Two Springfields,12
+251,Insane Clown Poppy,12
+252,Lisa the Tree Hugger,12
+253,Homer vs. Dignity,12
+254,The Computer Wore Menace Shoes,12
+255,The Great Money Caper,12
+256,Skinner's Sense of Snow,12
+257,HOMЯ,12
+258,Pokey Mom,12
+259,Worst Episode Ever,12
+260,Tennis the Menace,12
+261,Day of the Jackanapes,12
+262,New Kids on the Blecch,12
+263,"Hungry, Hungry Homer",12
+264,Bye Bye Nerdie,12
+265,Simpson Safari,12
+266,Trilogy of Error,12
+267,I'm Goin' to Praiseland,12
+268,Children of a Lesser Clod,12
+269,Simpsons Tall Tales,12
+270,Treehouse of Horror XII,13
+271,The Parent Rap,13
+272,Homer the Moe,13
+273,A Hunka Hunka Burns in Love,13
+274,The Blunder Years,13
+275,She of Little Faith,13
+276,Brawl in the Family,13
+277,Sweets and Sour Marge,13
+278,Jaws Wired Shut,13
+279,Half-Decent Proposal,13
+280,The Bart Wants What it Wants,13
+281,The Lastest Gun in the West,13
+282,The Old Man and the Key,13
+283,Tales from the Public Domain,13
+284,Blame it on Lisa,13
+285,Weekend at Burnsie's,13
+286,Gump Roast,13
+287,I Am Furious (Yellow),13
+288,The Sweetest Apu,13
+289,Little Girl in the Big Ten,13
+290,The Frying Game,13
+291,Poppa's Got a Brand New Badge,13
+292,Treehouse of Horror XIII,14
+293,How I Spent My Strummer Vacation,14
+294,Bart vs. Lisa vs. the Third Grade,14
+295,Large Marge,14
+296,Helter Shelter,14
+297,The Great Louse Detective,14
+298,Special Edna,14
+299,The Dad Who Knew Too Little,14
+300,The Strong Arms of the Ma,14
+301,Pray Anything,14
+302,Barting Over,14
+303,I'm Spelling as Fast as I Can,14
+304,A Star is Born-Again,14
+305,Mr. Spritz Goes to Washington,14
+306,C.E. D'oh,14
+307,'Scuse Me While I Miss the Sky,14
+308,Three Gays of the Condo,14
+309,"Dude, Where's My Ranch?",14
+310,Old Yeller-Belly,14
+311,"Brake My Wife, Please",14
+312,The Bart of War,14
+313,Moe Baby Blues,14
+314,Treehouse of Horror XIV,15
+315,My Mother the Carjacker,15
+316,The President Wore Pearls,15
+317,The Regina Monologues,15
+318,The Fat and the Furriest,15
+319,"Today, I Am a Clown",15
+320,'Tis the Fifteenth Season,15
+321,"Marge vs. Singles, Seniors, Childless Couples and Teens and Gays",15
+322,"I, (Annoyed Grunt)-Bot",15
+323,Diatribe of a Mad Housewife,15
+324,Margical History Tour,15
+325,Milhouse Doesn't Live Here Anymore,15
+326,Smart and Smarter,15
+327,The Ziff Who Came to Dinner,15
+328,Co-Dependent's Day,15
+329,The Wandering Juvie,15
+330,My Big Fat Geek Wedding,15
+331,Catch 'Em if You Can,15
+332,Simple Simpson,15
+333,The Way We Weren't,15
+334,Bart-Mangled Banner,15
+335,Fraudcast News,15
+336,Treehouse of Horror XV,16
+337,All's Fair in Oven War,16
+338,Sleeping with the Enemy,16
+339,She Used to Be My Girl,16
+340,Fat Man and Little Boy,16
+341,Midnight Rx,16
+342,Mommie Beerest,16
+343,Homer and Ned's Hail Mary Pass,16
+344,Pranksta Rap,16
+345,There's Something About Marrying,16
+346,On a Clear Day I Can't See My Sister,16
+347,Goo Goo Gai Pan,16
+348,Mobile Homer,16
+349,The Seven-Beer Snitch,16
+350,Future-Drama,16
+351,Don't Fear the Roofer,16
+352,The Heartbroke Kid,16
+353,A Star is Torn,16
+354,Thank God It's Doomsday,16
+355,Home Away from Homer,16
+356,"The Father, the Son and the Holy Guest Star",16
+357,The Bonfire of the Manatees,17
+358,The Girl Who Slept Too Little,17
+359,Milhouse of Sand and Fog,17
+360,Treehouse of Horror XVI,17
+361,Marge's Son Poisoning,17
+362,See Homer Run,17
+363,The Last of the Red Hat Mamas,17
+364,The Italian Bob,17
+365,Simpsons Christmas Stories,17
+366,Homer's Paternity Coot,17
+367,We're on the Road to D'oh-where,17
+368,My Fair Laddy,17
+369,The Seemingly Never-Ending Story,17
+370,Bart Has Two Mommies,17
+371,"Homer Simpson, This is Your Wife",17
+372,Million-Dollar Abie,17
+373,Kiss Kiss Bang Bangalore,17
+374,The Wettest Stories Ever Told,17
+375,Girls Just Want to Have Sums,17
+376,Regarding Margie,17
+377,The Monkey Suit,17
+378,Marge and Homer Turn a Couple Play,17
+379,"The Mook, the Chef, the Wife and Her Homer",18
+380,Jazzy and the Pussycats,18
+381,"Please Homer, Don't Hammer 'Em",18
+382,Treehouse of Horror XVII,18
+383,G.I. D'oh,18
+384,Moe'N'a Lisa,18
+385,Ice Cream of Margie (with the Light Blue Hair),18
+386,The Haw-Hawed Couple,18
+387,"Kill Gil, Volumes I & II",18
+388,The Wife Aquatic,18
+389,Revenge is a Dish Best Served Three Times,18
+390,Little Big Girl,18
+391,Springfield Up,18
+392,Yokel Chords,18
+393,Rome-Old and Julie-Eh,18
+394,Homerazzi,18
+395,Marge Gamer,18
+396,The Boys of Bummer,18
+397,Crook and Ladder,18
+398,"Stop, or My Dog Will Shoot!",18
+399,24 Minutes,18
+400,You Kent Always Say What You Want,18
+401,He Loves to Fly and He D'ohs,19
+402,The Homer of Seville,19
+403,Midnight Towboy,19
+404,I Don't Wanna Know Why the Caged Bird Sings,19
+405,Treehouse of Horror XVIII,19
+406,Little Orphan Millie,19
+407,Husbands and Knives,19
+408,Funeral for a Fiend,19
+409,Eternal Moonshine of the Simpson Mind,19
+410,E. Pluribus Wiggum,19
+411,That '90s Show,19
+412,"Love, Springfieldian Style",19
+413,The Debarted,19
+414,"Dial ""N"" for Nerder",19
+415,Smoke on the Daughter,19
+416,Papa Don't Leech,19
+417,Apocalypse Cow,19
+418,Any Given Sundance,19
+419,Mona Leaves-a,19
+420,All About Lisa,19
+421,"Sex, Pies, and Idiot Scrapes",20
+422,Lost Verizon,20
+423,"Double, Double, Boy in Trouble",20
+424,Treehouse of Horror XIX,20
+425,Dangerous Curves,20
+426,Homer and Lisa Exchange Cross Words,20
+427,MyPods and Boomsticks,20
+428,The Burns and the Bees,20
+429,Lisa the Drama Queen,20
+430,"Take My Life, Please",20
+431,How the Test Was Won,20
+432,"No Loan Again, Naturally",20
+433,Gone Maggie Gone,20
+434,In the Name of the Grandfather,20
+435,Wedding for Disaster,20
+436,"Eeny Teeny Maya, Moe",20
+437,"The Good, the Sad and the Drugly",20
+438,Father Knows Worst,20
+439,"Waverly Hills, 9-0-2-1-D'oh",20
+440,Four Great Women and a Manicure,20
+441,Coming to Homerica,20
+442,Homer the Whopper,21
+443,"Bart Gets a ""Z""",21
+444,The Great Wife Hope,21
+445,Treehouse of Horror XX,21
+446,The Devil Wears Nada,21
+447,Pranks and Greens,21
+448,Rednecks and Broomsticks,21
+449,"O Brother, Where Bart Thou?",21
+450,Thursdays with Abie,21
+451,Once Upon a Time in Springfield,21
+452,Million Dollar Maybe,21
+453,Boy Meets Curl,21
+454,The Color Yellow,21
+455,Postcards From the Wedge,21
+456,Stealing First Base,21
+457,The Greatest Story Ever D'ohed,21
+458,American History X-cellent,21
+459,Chief of Hearts,21
+460,The Squirt and the Whale,21
+461,To Surveil With Love,21
+462,Moe Letter Blues,21
+463,The Bob Next Door,21
+464,Judge Me Tender,21
+465,Elementary School Musical,22
+466,Loan-a Lisa,22
+467,MoneyBART,22
+468,Treehouse of Horror XXI,22
+469,"Lisa Simpson, This Isn't Your Life",22
+470,The Fool Monty,22
+471,How Munched is That Birdie in the Window?,22
+472,The Fight Before Christmas,22
+473,Donnie Fatso,22
+474,Moms I'd Like to Forget,22
+475,Flaming Moe,22
+476,Homer the Father,22
+477,The Blue and the Gray,22
+478,Angry Dad: The Movie,22
+479,The Scorpion's Tale,22
+480,A Midsummer's Nice Dream,22
+481,Love is a Many Strangled Thing,22
+482,The Great Simpsina,22
+483,The Real Housewives of Fat Tony,22
+484,Homer Scissorhands,22
+485,500 Keys,22
+486,The Ned-liest Catch,22
+487,The Falcon and the D'ohman,23
+488,Bart Stops to Smell the Roosevelts,23
+489,Treehouse of Horror XXII,23
+490,Replaceable You,23
+491,The Food Wife,23
+492,The Book Job,23
+493,The Man in the Blue Flannel Pants,23
+494,The Ten-Per-Cent Solution,23
+495,Holidays of Future Passed,23
+496,"Politically Inept, with Homer Simpson",23
+497,The D'oh-cial Network,23
+498,Moe Goes from Rags to Riches,23
+499,The Daughter Also Rises,23
+500,At Long Last Leave,23
+501,Exit Through the Kwik-E-Mart,23
+502,How I Wet Your Mother,23
+503,"Them, Robot",23
+504,Beware My Cheating Bart,23
+505,A Totally Fun Thing Bart Will Never Do Again,23
+506,The Spy Who Learned Me,23
+507,Ned 'N Edna's Blend Agenda,23
+508,Lisa Goes Gaga,23
+509,Moonshine River,24
+510,Treehouse of Horror XXIII,24
+511,Adventures in Baby-Getting,24
+512,Gone Abie Gone,24
+513,Penny-Wiseguys,24
+514,A Tree Grows in Springfield,24
+515,The Day the Earth Stood Cool,24
+516,"To Cur, with Love",24
+517,Homer Goes to Prep School,24
+518,A Test Before Trying,24
+519,Changing of the Guardian,24
+520,Love is a Many-Splintered Thing,24
+521,Hardly Kirk-ing,24
+522,Gorgeous Grampa,24
+523,"Black-Eyed, Please",24
+524,Dark Knight Court,24
+525,What Animated Women Want,24
+526,Pulpit Friction,24
+527,Whiskey Business,24
+528,The Fabulous Faker Boy,24
+529,The Saga of Carl,24
+530,Dangers on a Train,24
+531,Homerland,25
+532,Treehouse of Horror XXIV,25
+533,Four Regrettings and a Funeral,25
+534,Yolo,25
+535,Labor Pains,25
+536,The Kid is All Right,25
+537,Yellow Subterfuge,25
+538,White Christmas Blues,25
+539,Steal This Episode,25
+540,Married to the Blob,25
+541,Specs and the City,25
+542,Diggs,25
+543,The Man Who Grew Too Much,25
+544,The Winter of His Content,25
+545,The War of Art,25
+546,You Don't Have to Live Like a Referee,25
+547,Luca$,25
+548,Days of Future Future,25
+549,What to Expect When Bart's Expecting,25
+550,Brick Like Me,25
+551,Pay Pal,25
+552,The Yellow Badge of Cowardge,25
+553,Clown in the Dumps,26
+554,The Wreck of the Relationship,26
+555,Super Franchise Me,26
+556,Treehouse of Horror XXV,26
+557,Opposites A-Frack,26
+558,Simpsorama,26
+559,Blazed and Confused,26
+560,Covercraft,26
+561,I Won't Be Home for Christmas,26
+562,The Man Who Came to Be Dinner,26
+563,Bart's New Friend,26
+564,The Musk Who Fell to Earth,26
+565,Walking Big & Tall,26
+566,My Fare Lady,26
+567,The Princess Guide,26
+568,Sky Police,26
+569,Waiting for Duffman,26
+570,Peeping Mom,26
+571,The Kids Are All Fight,26
+572,Let's Go Fly a Coot,26
+573,Bull-E,26
+574,Mathlete's Feat,26
+575,Every Man's Dream,27
+576,Cue Detective,27
+577,Puffless,27
+578,Halloween of Horror,27
+579,Treehouse of Horror XXVI,27
+580,Friend with Benefit,27
+581,"Lisa with an ""S""",27
+582,Paths of Glory,27
+583,Barthood,27
+584,The Girl Code,27
+585,Teenage Mutant Milk-caused Hurdles,27
+586,Much Apu About Something,27
+587,Love Is in the N2-O2-Ar-CO2-Ne-He-CH4,27
+588,Gal of Constant Sorrow,27
+589,Lisa the Veterinarian,27
+590,The Marge-ian Chronicles,27
+591,The Burns Cage,27
+592,How Lisa Got Her Marge Back,27
+593,Fland Canyon,27
+594,To Courier with Love,27
+595,Simprovised,27
+596,Orange is the New Yellow,27
+597,Monty Burns' Fleeing Circus,28
+598,Friends and Family,28
+599,The Town,28
+600,Treehouse of Horror XXVII,28
+601,Trust But Clarify,28
+602,There Will Be Buds,28
+603,Havana Wild Weekend,28
+604,Dad Behavior,28
+605,The Last Traction Hero,28
+606,The Nightmare After Krustmas,28
+607,Pork and Burns,28
+608,The Great Phatsby (1),28
+609,The Great Phatsby (2),28
+610,Fatzcarraldo,28
+611,The Cad and the Hat,28
+612,Kamp Krustier,28
+613,22 For 30,28
+614,A Father's Watch,28
+615,The Caper Chase,28
+616,Looking for Mr. Goodbart,28
+617,Moho House,28
+618,Dogtown,28
+619,The Serfsons,29
+620,Springfield Splendor,29
+621,Whistler's Father,29
+622,Treehouse of Horror XXVIII,29
+623,Grampy Can Ya Hear Me,29
+624,The Old Blue Mayor She Ain't What She Used to Be,29
+625,Singin' in the Lane,29
+626,Mr. Lisa's Opus,29
+627,Gone Boy,29
+628,Haw-Haw Land,29
+629,Frink Gets Testy,29
+630,Homer Is Where the Art Isn't,29
+631,3 Scenes Plus a Tag from a Marriage,29
+632,Fears of a Clown,29
+633,No Good Read Goes Unpunished,29
+634,King Leer,29
+635,Lisa Gets the Blues,29
+636,Forgive and Regret,29
+637,Left Behind,29
+638,Throw Grampa from the Dane,29
+639,Flanders' Ladder,29
+640,Bart's Not Dead,30
+641,Heartbreak Hotel,30
+642,My Way or the Highway to Heaven,30
+643,Treehouse of Horror XXIX,30
+644,Baby You Can't Drive My Car,30
+645,From Russia Without Love,30
+646,Werking Mom,30
+647,Krusty the Clown,30
+648,Daddicus Finch,30
+649,'Tis the 30th Season,30
+650,Mad About the Toy,30
+651,The Girl on the Bus,30
+652,I'm Dancing as Fat as I Can,30
+653,The Clown Stays in the Picture,30
+654,101 Mitigations,30
+655,I Want You (She's So Heavy),30
+656,E My Sports,30
+657,Bart vs. Itchy & Scratchy,30
+658,Girl's in the Band,30
+659,I'm Just a Girl Who Can't Say D'oh,30
+660,D'oh Canada,30
+661,Woo-hoo Dunnit?,30
+662,Crystal Blue-Haired Persuasion,30
+663,The Winter of Our Monetized Content,31
+664,Go Big or Go Homer,31
+665,The Fat Blue Line,31
+666,Treehouse of Horror XXX,31
+667,Gorillas on the Mast,31
+668,Marge the Lumberjill,31
+669,Livin' La Pura Vida,31
+670,Thanksgiving of Horror,31
+671,"Todd, Todd, Why Hast Thou Forsaken Me?",31
+672,"Bobby, It's Cold Outside",31
+673,Hail to the Teeth,31
+674,The Miseducation of Lisa Simpson,31
+675,Frinkcoin,31
+676,Bart the Bad Guy,31
+677,Screenless,31
+678,Better Off Ned (episode),31
+679,Highway to Well,31
+680,The Incredible Lightness of Being a Baby,31
+681,Warrin' Priests (Part One),31
+682,Warrin' Priests (Part Two),31
+683,The Hateful Eight-Year-Olds,31
+684,The Way of the Dog,31
+685,Undercover Burns,32
+686,"I, Carumbus",32
+687,"Now Museum, Now You Don't",32
+688,Treehouse of Horror XXXI,32
+689,The 7 Beer Itch,32
+690,Podcast News,32
+691,Three Dreams Denied,32
+692,The Road to Cincinnati,32
+693,Sorry Not Sorry,32
+694,A Springfield Summer Christmas for Christmas,32
+695,The Dad-Feelings Limited,32
+696,Diary Queen,32
+697,Wad Goals,32
+698,Yokel Hero,32
+699,Do PizzaBots Dream of Electric Guitars?,32
+700,Manger Things,32
+701,Uncut Femmes,32
+702,Burger Kings,32
+703,Panic on the Streets of Springfield,32
+704,Mother and Child Reunion,32
+705,The Man from G.R.A.M.P.A.,32
+706,The Last Barfighter,32
+707,The Star of the Backstage,33
+708,Bart's In Jail!,33
+709,Treehouse of Horror XXXII,33
+710,The Wayz We Were,33
+711,Lisa's Belly,33
+712,A Serious Flanders: Part One,33
+713,A Serious Flanders: Part Two,33
+714,Portrait of a Lackey on Fire,33
+715,Mothers and Other Strangers,33
+716,A Made Maggie,33
+717,The Longest Marge,33
+718,Pixelated and Afraid,33
+719,Boyz N the Highlands,33
+720,You Won't Believe What This Episode is About - Act Three Will Shock You!,33
+721,Bart the Cool Kid,33
+722,Pretty Whittle Liar,33
+723,The Sound of Bleeding Gums,33
+724,My Octopus and a Teacher,33
+725,Girls Just Shauna Have Fun,33
+726,Marge the Meanie,33
+727,Meat Is Murder,33
+728,Poorhouse Rock,33
+729,Habeas Tortoise,34
+730,One Angry Lisa,34
+731,Lisa the Boy Scout,34
+732,The King of Nice,34
+733,Not It,34
+734,Treehouse of Horror XXXIII,34
+735,From Beer to Paternity,34
+736,Step Brother from the Same Planet,34
+737,When Nelson Met Lisa,34
+738,Game Done Changed,34
+739,Top Goon,34
+740,My Life as a Vlog,34
+741,The Many Saints of Springfield,34
+742,Carl Carlson Rides Again,34
+743,Bartless,34
+744,Hostile Kirk Place,34
+745,Pin Gal,34
+746,Fan-ily Feud,34
+747,Write Off This Episode,34
+748,The Very Hungry Caterpillars,34
+749,Clown V. Board of Education,34
+750,Homer's Adventures Through the Windshield Glass,34
+751,Homer's Crossing,35
+752,A Mid-Childhood Night's Dream,35
+753,McMansion & Wife,35
+754,Thirst Trap: A Corporate Love Story,35
+755,Treehouse of Horror XXXIV,35
+756,Iron Marge,35
+757,It's a Blunderful Life,35
+758,AE Bonny Romance,35
+759,"Murder, She Boat",35
+760,Do the Wrong Thing,35
+761,Frinkenstein's Monster,35
+762,Lisa Gets an F1,35
+763,Clan of the Cave Mom,35
+764,Night of the Living Wage,35
+765,Cremains of the Day,35
+766,The Tell-Tale Pants,35
+767,The Tipping Point,35
+768,Bart's Brain,35

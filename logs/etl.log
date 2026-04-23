@@ -23,6 +23,7 @@
 2026-02-28 11:40:22,938 - INFO -  Datos extraídos para Cartagena
 2026-02-28 11:40:23,947 - INFO -  Datos guardados en data/clima_raw.json
 2026-02-28 11:40:23,969 - INFO -  Datos guardados en data/clima.csv
+<<<<<<< HEAD
 2026-03-01 20:36:56,790 - INFO - Iniciando extracción para 5 ciudades...
 2026-03-01 20:36:58,680 - INFO -  Datos extraídos para Bogota
 2026-03-01 20:37:01,059 - INFO -  Datos extraídos para Medellin
@@ -136,3 +137,5 @@
 2026-03-11 21:33:20,923 - INFO - Datos extraídos para Cartagena
 2026-03-11 21:33:20,937 - INFO - Registro guardado para Cartagena
 2026-03-11 21:33:20,965 - INFO - Metricas guardadas: Extraídos: 5, Guardados: 5, Fallidos: 0
+=======
+>>>>>>> 241188abc411eb092c9a23228d311ed7b84787b6

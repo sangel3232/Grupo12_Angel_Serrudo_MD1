@@ -1,4 +1,5 @@
 requests==2.31.0
+<<<<<<< HEAD
 pandas==2.2.2
 python-dotenv==1.0.0
 matplotlib==3.8.0
@@ -6,3 +7,9 @@ openpyxl==3.1.2
 psycopg2-binary==2.9.9
 sqlalchemy==2.0.23
 alembic==1.12.1
+=======
+pandas==2.1.0
+python-dotenv==1.0.0
+matplotlib==3.8.0
+openpyxl==3.1.2
+>>>>>>> 241188abc411eb092c9a23228d311ed7b84787b6

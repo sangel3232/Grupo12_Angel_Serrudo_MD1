@@ -1,4 +1,12 @@
 .env
 venv/
 __pycache__/
+<<<<<<< HEAD
 *.pyc
+=======
+*.pyc
+data/*.csv
+logs/
+.streamlit/secrets.toml
+data/graficas/*.png
+>>>>>>> 241188abc411eb092c9a23228d311ed7b84787b6
