@@ -10,6 +10,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -161,7 +162,8 @@ st.sidebar.markdown("""
 st.sidebar.title("Navegación")
 seccion = st.sidebar.radio(
     "Ir a",
-    ["📊 Estadísticas", "👥 Personajes", "📺 Episodios", "🤖 Regresión Lineal", "📥 Datos"],
+    ["📊 Estadísticas", "👥 Personajes", "📺 Episodios",
+     "🤖 Regresión Lineal", "🌳 Árboles y Clasificación", "📥 Datos"],
 )
 
 # ── Carga global ──────────────────────────────────────────────────────────────
@@ -489,9 +491,225 @@ elif seccion == "🤖 Regresión Lineal":
         col_res2.warning("🔴 Episodio con rating bajo — poco valorado por la audiencia")
 
 # ═════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 5 — DATOS Y EXPORTAR
+# SECCIÓN 5 — ÁRBOLES Y CLASIFICACIÓN
 # ═════════════════════════════════════════════════════════════════════════════
-elif seccion == "📥 Datos":
+elif seccion == "🌳 Árboles y Clasificación":
+    st.title("🌳 Árboles de Decisión y Clasificación Binaria")
+
+    if df_rat.empty:
+        st.warning("No hay datos disponibles. Ejecuta el pipeline primero.")
+        st.stop()
+
+    FEATURES_ES = [c for c in ["Audiencia (millones)", "Temporada", "Duración (min)", "N° en temporada"] if c in df_rat.columns]
+    UMBRAL = 7.5
+
+    df_modelo = df_rat.copy()
+    df_modelo["Rating alto"] = (df_modelo["Rating IMDB"] >= UMBRAL).astype(int)
+    df_model = df_modelo[FEATURES_ES + ["Rating IMDB", "Rating alto"]].dropna()
+
+    X = df_model[FEATURES_ES]
+    y_reg  = df_model["Rating IMDB"]
+    y_clas = df_model["Rating alto"]
+
+    st.sidebar.subheader("⚙️ Parámetros")
+    test_size    = st.sidebar.slider("Proporción de datos de prueba", 0.1, 0.4, 0.2, 0.05)
+    max_depth    = st.sidebar.slider("Profundidad máxima del árbol", 2, 10, 5)
+    random_state = st.sidebar.number_input("Semilla aleatoria", value=42, step=1)
+
+    scaler = StandardScaler()
+
+    splits = [("80/20", 0.20), ("70/30", 0.30), ("60/40", 0.40)]
+
+    # ── Función de métricas ───────────────────────────────────────────────────
+    def met_reg(y_true, y_pred, split):
+        return {"Split": split,
+                "R²": round(r2_score(y_true, y_pred), 4),
+                "RMSE": round(np.sqrt(mean_squared_error(y_true, y_pred)), 4),
+                "MAE": round(mean_absolute_error(y_true, y_pred), 4)}
+
+    def met_clas(y_true, y_pred, y_prob, split, modelo):
+        from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+        return {"Modelo": modelo, "Split": split,
+                "Accuracy":  round(accuracy_score(y_true, y_pred), 4),
+                "Precision": round(precision_score(y_true, y_pred, zero_division=0), 4),
+                "Recall":    round(recall_score(y_true, y_pred, zero_division=0), 4),
+                "F1":        round(f1_score(y_true, y_pred, zero_division=0), 4),
+                "ROC-AUC":   round(roc_auc_score(y_true, y_prob), 4)}
+
+    # ══════════════════════════════════════════════════════════════════════════
+    tab1, tab2, tab3 = st.tabs(["🌲 Árbol de Regresión", "🏷️ Árbol de Clasificación", "📈 Regresión Logística"])
+
+    # ── TAB 1: Árbol de Regresión ─────────────────────────────────────────────
+    with tab1:
+        st.subheader("Árbol de Decisión para Regresión")
+        st.markdown(f"**Variable objetivo:** Rating IMDB (continuo)  \n**Splits evaluados:** 80/20 · 70/30 · 60/40")
+
+        res_arbol_reg = []
+        for nombre, ts in splits:
+            Xtr, Xte, ytr, yte = train_test_split(X, y_reg, test_size=ts, random_state=int(random_state))
+            m = DecisionTreeRegressor(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+            m.fit(Xtr, ytr)
+            yp = m.predict(Xte)
+            res_arbol_reg.append(met_reg(yte, yp, nombre))
+
+        df_ar = pd.DataFrame(res_arbol_reg)
+        st.subheader("📋 Métricas por split")
+        st.dataframe(df_ar, use_container_width=True, hide_index=True)
+
+        col1, col2, col3 = st.columns(3)
+        for col, met in zip([col1, col2, col3], ["R²", "RMSE", "MAE"]):
+            fig = go.Figure(go.Bar(
+                x=df_ar["Split"], y=df_ar[met],
+                marker_color=["#2196F3", "#FF9800", "#4CAF50"],
+                text=df_ar[met], textposition="outside"))
+            fig.update_layout(title=met, height=300, showlegend=False, margin=dict(t=40,b=20))
+            col.plotly_chart(fig, use_container_width=True)
+
+        # Gráfica real vs predicho del mejor split
+        mejor_idx = df_ar["R²"].idxmax()
+        mejor_ts  = splits[mejor_idx][1]
+        Xtr_b, Xte_b, ytr_b, yte_b = train_test_split(X, y_reg, test_size=mejor_ts, random_state=int(random_state))
+        m_best = DecisionTreeRegressor(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+        m_best.fit(Xtr_b, ytr_b)
+        yp_best = m_best.predict(Xte_b)
+
+        st.subheader(f"Real vs Predicho — Mejor split ({splits[mejor_idx][0]})")
+        fig_rv = px.scatter(x=yte_b, y=yp_best,
+            labels={"x": "Rating real", "y": "Rating predicho"},
+            opacity=0.5, color_discrete_sequence=["#2196F3"])
+        lim = [min(yte_b.min(), yp_best.min()), max(yte_b.max(), yp_best.max())]
+        fig_rv.add_scatter(x=lim, y=lim, mode="lines",
+            line=dict(color="red", dash="dash"), name="Predicción perfecta")
+        st.plotly_chart(fig_rv, use_container_width=True)
+
+        # Importancia de variables
+        imp_df = pd.DataFrame({"Variable": FEATURES_ES, "Importancia": m_best.feature_importances_}).sort_values("Importancia")
+        fig_imp = px.bar(imp_df, x="Importancia", y="Variable", orientation="h",
+            title="Importancia de variables — Árbol de Regresión",
+            color="Importancia", color_continuous_scale="YlGn")
+        st.plotly_chart(fig_imp, use_container_width=True)
+
+        st.subheader("📊 Summary final")
+        st.dataframe(df_ar, use_container_width=True, hide_index=True)
+        mejor = df_ar.loc[df_ar["R²"].idxmax()]
+        st.success(f"✅ Mejor R² = **{mejor['R²']}** con split **{mejor['Split']}** | RMSE = {mejor['RMSE']} | MAE = {mejor['MAE']}")
+
+    # ── TAB 2: Árbol de Clasificación ─────────────────────────────────────────
+    with tab2:
+        from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, roc_curve, roc_auc_score
+        st.subheader("Árbol de Decisión para Clasificación Binaria")
+        st.markdown(f"**Variable objetivo:** Rating alto (1 si Rating IMDB ≥ {UMBRAL}, 0 si no)  \n"
+                    f"**Balance:** {y_clas.mean()*100:.1f}% episodios con rating alto")
+
+        res_arbol_clas = []
+        for nombre, ts in splits:
+            Xtr, Xte, ytr, yte = train_test_split(X, y_clas, test_size=ts, random_state=int(random_state), stratify=y_clas)
+            m = DecisionTreeClassifier(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+            m.fit(Xtr, ytr)
+            yp   = m.predict(Xte)
+            yprob = m.predict_proba(Xte)[:, 1]
+            res_arbol_clas.append(met_clas(yte, yp, yprob, nombre, "Árbol"))
+
+        df_ac = pd.DataFrame(res_arbol_clas)
+        st.subheader("📋 Métricas por split")
+        st.dataframe(df_ac, use_container_width=True, hide_index=True)
+
+        col1, col2 = st.columns(2)
+        for col, met in zip([col1, col2], ["Accuracy", "F1"]):
+            fig = go.Figure(go.Bar(
+                x=df_ac["Split"], y=df_ac[met],
+                marker_color=["#2196F3", "#FF9800", "#4CAF50"],
+                text=df_ac[met], textposition="outside"))
+            fig.update_layout(title=met, height=300, showlegend=False, margin=dict(t=40,b=20))
+            col.plotly_chart(fig, use_container_width=True)
+
+        # Matriz de confusión del mejor split
+        mejor_idx_c = df_ac["F1"].idxmax()
+        mejor_ts_c  = splits[mejor_idx_c][1]
+        Xtr_c, Xte_c, ytr_c, yte_c = train_test_split(X, y_clas, test_size=mejor_ts_c, random_state=int(random_state), stratify=y_clas)
+        m_best_c = DecisionTreeClassifier(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+        m_best_c.fit(Xtr_c, ytr_c)
+        yp_c    = m_best_c.predict(Xte_c)
+        yprob_c = m_best_c.predict_proba(Xte_c)[:, 1]
+
+        st.subheader(f"Matriz de confusión — Mejor split ({splits[mejor_idx_c][0]})")
+        cm = confusion_matrix(yte_c, yp_c)
+        fig_cm, ax_cm = plt.subplots(figsize=(5, 4))
+        ConfusionMatrixDisplay(cm, display_labels=["Bajo", "Alto"]).plot(ax=ax_cm, colorbar=False)
+        ax_cm.set_title("Matriz de Confusión")
+        st.pyplot(fig_cm)
+        plt.close()
+
+        st.subheader("📊 Summary final")
+        st.dataframe(df_ac, use_container_width=True, hide_index=True)
+        mejor_c = df_ac.loc[df_ac["F1"].idxmax()]
+        st.success(f"✅ Mejor F1 = **{mejor_c['F1']}** con split **{mejor_c['Split']}** | Accuracy = {mejor_c['Accuracy']} | ROC-AUC = {mejor_c['ROC-AUC']}")
+
+    # ── TAB 3: Regresión Logística ────────────────────────────────────────────
+    with tab3:
+        from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, roc_curve, roc_auc_score
+        from sklearn.linear_model import LogisticRegression
+        st.subheader("Regresión Logística — Clasificación Binaria")
+        st.markdown(f"**Variable objetivo:** Rating alto (1 si Rating IMDB ≥ {UMBRAL}, 0 si no)")
+
+        res_logit = []
+        for nombre, ts in splits:
+            Xtr, Xte, ytr, yte = train_test_split(X, y_clas, test_size=ts, random_state=int(random_state), stratify=y_clas)
+            Xtr_sc = scaler.fit_transform(Xtr)
+            Xte_sc = scaler.transform(Xte)
+            m = LogisticRegression(max_iter=1000, random_state=int(random_state))
+            m.fit(Xtr_sc, ytr)
+            yp    = m.predict(Xte_sc)
+            yprob = m.predict_proba(Xte_sc)[:, 1]
+            res_logit.append(met_clas(yte, yp, yprob, nombre, "Reg. Logística"))
+
+        df_lg = pd.DataFrame(res_logit)
+        st.subheader("📋 Métricas por split")
+        st.dataframe(df_lg, use_container_width=True, hide_index=True)
+
+        col1, col2 = st.columns(2)
+        for col, met in zip([col1, col2], ["Accuracy", "ROC-AUC"]):
+            fig = go.Figure(go.Bar(
+                x=df_lg["Split"], y=df_lg[met],
+                marker_color=["#2196F3", "#FF9800", "#4CAF50"],
+                text=df_lg[met], textposition="outside"))
+            fig.update_layout(title=met, height=300, showlegend=False, margin=dict(t=40,b=20))
+            col.plotly_chart(fig, use_container_width=True)
+
+        # Coeficientes del mejor split
+        mejor_idx_l = df_lg["ROC-AUC"].idxmax()
+        mejor_ts_l  = splits[mejor_idx_l][1]
+        Xtr_l, Xte_l, ytr_l, yte_l = train_test_split(X, y_clas, test_size=mejor_ts_l, random_state=int(random_state), stratify=y_clas)
+        Xtr_l_sc = scaler.fit_transform(Xtr_l)
+        Xte_l_sc = scaler.transform(Xte_l)
+        m_best_l = LogisticRegression(max_iter=1000, random_state=int(random_state))
+        m_best_l.fit(Xtr_l_sc, ytr_l)
+        yp_l    = m_best_l.predict(Xte_l_sc)
+        yprob_l = m_best_l.predict_proba(Xte_l_sc)[:, 1]
+
+        coef_df = pd.DataFrame({"Variable": FEATURES_ES, "Coeficiente": m_best_l.coef_[0]}).sort_values("Coeficiente")
+        fig_coef = px.bar(coef_df, x="Coeficiente", y="Variable", orientation="h",
+            color="Coeficiente", color_continuous_scale="RdYlGn",
+            title=f"Coeficientes — Regresión Logística (Split {splits[mejor_idx_l][0]})")
+        fig_coef.add_vline(x=0, line_dash="dash", line_color="white")
+        st.plotly_chart(fig_coef, use_container_width=True)
+
+        # Curva ROC
+        fpr, tpr, _ = roc_curve(yte_l, yprob_l)
+        auc_val = roc_auc_score(yte_l, yprob_l)
+        fig_roc = go.Figure()
+        fig_roc.add_scatter(x=fpr, y=tpr, mode="lines", name=f"ROC (AUC={auc_val:.3f})", line=dict(color="#4CAF50", width=2))
+        fig_roc.add_scatter(x=[0,1], y=[0,1], mode="lines", name="Aleatorio", line=dict(color="red", dash="dash"))
+        fig_roc.update_layout(title=f"Curva ROC — Split {splits[mejor_idx_l][0]}",
+            xaxis_title="Tasa de Falsos Positivos", yaxis_title="Tasa de Verdaderos Positivos")
+        st.plotly_chart(fig_roc, use_container_width=True)
+
+        st.subheader("📊 Summary final")
+        st.dataframe(df_lg, use_container_width=True, hide_index=True)
+        mejor_l = df_lg.loc[df_lg["ROC-AUC"].idxmax()]
+        st.success(f"✅ Mejor ROC-AUC = **{mejor_l['ROC-AUC']}** con split **{mejor_l['Split']}** | Accuracy = {mejor_l['Accuracy']} | F1 = {mejor_l['F1']}")
+
+
     st.title("📥 Datos completos y exportación")
 
     tab1, tab2, tab3 = st.tabs(["👥 Personajes", "📺 Episodios", "⭐ Ratings"])
