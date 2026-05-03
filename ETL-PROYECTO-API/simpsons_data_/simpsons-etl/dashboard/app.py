@@ -4,6 +4,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from sklearn.linear_model import LinearRegression
@@ -547,7 +548,7 @@ elif seccion == "🌳 Árboles y Clasificación":
         res_arbol_reg = []
         for nombre, ts in splits:
             Xtr, Xte, ytr, yte = train_test_split(X, y_reg, test_size=ts, random_state=int(random_state))
-            m = DecisionTreeRegressor(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+            m = DecisionTreeRegressor(max_depth=3, min_samples_leaf=15, min_samples_split=20, random_state=int(random_state))
             m.fit(Xtr, ytr)
             yp = m.predict(Xte)
             res_arbol_reg.append(met_reg(yte, yp, nombre))
@@ -569,7 +570,7 @@ elif seccion == "🌳 Árboles y Clasificación":
         mejor_idx = df_ar["R²"].idxmax()
         mejor_ts  = splits[mejor_idx][1]
         Xtr_b, Xte_b, ytr_b, yte_b = train_test_split(X, y_reg, test_size=mejor_ts, random_state=int(random_state))
-        m_best = DecisionTreeRegressor(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+        m_best = DecisionTreeRegressor(max_depth=3, min_samples_leaf=15, min_samples_split=20, random_state=int(random_state))
         m_best.fit(Xtr_b, ytr_b)
         yp_best = m_best.predict(Xte_b)
 
@@ -604,7 +605,7 @@ elif seccion == "🌳 Árboles y Clasificación":
         res_arbol_clas = []
         for nombre, ts in splits:
             Xtr, Xte, ytr, yte = train_test_split(X, y_clas, test_size=ts, random_state=int(random_state), stratify=y_clas)
-            m = DecisionTreeClassifier(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+            m = DecisionTreeClassifier(max_depth=3, min_samples_leaf=15, min_samples_split=20, class_weight="balanced", random_state=int(random_state))
             m.fit(Xtr, ytr)
             yp   = m.predict(Xte)
             yprob = m.predict_proba(Xte)[:, 1]
@@ -627,7 +628,7 @@ elif seccion == "🌳 Árboles y Clasificación":
         mejor_idx_c = df_ac["F1"].idxmax()
         mejor_ts_c  = splits[mejor_idx_c][1]
         Xtr_c, Xte_c, ytr_c, yte_c = train_test_split(X, y_clas, test_size=mejor_ts_c, random_state=int(random_state), stratify=y_clas)
-        m_best_c = DecisionTreeClassifier(max_depth=max_depth, min_samples_leaf=10, random_state=int(random_state))
+        m_best_c = DecisionTreeClassifier(max_depth=3, min_samples_leaf=15, min_samples_split=20, class_weight="balanced", random_state=int(random_state))
         m_best_c.fit(Xtr_c, ytr_c)
         yp_c    = m_best_c.predict(Xte_c)
         yprob_c = m_best_c.predict_proba(Xte_c)[:, 1]
