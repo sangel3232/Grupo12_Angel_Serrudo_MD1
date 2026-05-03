@@ -27,11 +27,11 @@ CREATE TABLE dim_episodes (
 
 CREATE TABLE fact_ratings (
     episode_id        INT PRIMARY KEY,
-    season            INT,
-    number_in_season  INT,
-    viewers_millions  NUMERIC(6, 2),
-    imdb_rating       NUMERIC(4, 1),
-    duration_min      INT
+    season            NUMERIC(10, 6),
+    number_in_season  NUMERIC(10, 6),
+    viewers_millions  NUMERIC(10, 6),
+    imdb_rating       NUMERIC(10, 6),
+    duration_min      NUMERIC(10, 6)
 );
 """
 

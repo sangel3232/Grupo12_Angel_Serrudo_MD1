@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
 
 
 def transform_characters(df: pd.DataFrame) -> pd.DataFrame:
@@ -60,6 +61,7 @@ def transform_ratings(df_episodes: pd.DataFrame) -> pd.DataFrame:
     Genera la tabla fact_ratings a partir de los episodios transformados.
     Simula viewers_millions, imdb_rating y duration_min cuando la API
     no los provee directamente, usando distribuciones realistas de Los Simpsons.
+    Las columnas numéricas se normalizan a rango [0, 1] con MinMaxScaler.
     """
     print("Generando fact_ratings...")
 
@@ -69,7 +71,7 @@ def transform_ratings(df_episodes: pd.DataFrame) -> pd.DataFrame:
     ratings = pd.DataFrame()
     ratings["episode_id"] = df_episodes["episode_id"].values
 
-    # Temporada (necesaria para tendencia histórica)
+    # Temporada
     season = df_episodes["season"].fillna(1).astype(int).values if "season" in df_episodes.columns else rng.integers(1, 36, n)
     ratings["season"] = season
 
@@ -79,13 +81,13 @@ def transform_ratings(df_episodes: pd.DataFrame) -> pd.DataFrame:
         else rng.integers(1, 25, n)
     )
 
-    # Viewers: temporadas tempranas tenían más audiencia (~30M) y baja en temporadas recientes (~5M)
+    # Viewers: temporadas tempranas ~30M, baja en temporadas recientes ~5M
     base_viewers = np.clip(30 - (season - 1) * 0.7, 4, 30)
     ratings["viewers_millions"] = np.round(
         base_viewers + rng.normal(0, 2, n), 2
     ).clip(1.0, 40.0)
 
-    # IMDB rating: media ~7.3, desviación ~0.6, ligera caída en temporadas tardías
+    # IMDB rating: media ~7.3, ligera caída en temporadas tardías
     base_rating = np.clip(8.0 - (season - 1) * 0.03, 6.0, 9.5)
     ratings["imdb_rating"] = np.round(
         base_rating + rng.normal(0, 0.5, n), 1
@@ -97,5 +99,16 @@ def transform_ratings(df_episodes: pd.DataFrame) -> pd.DataFrame:
     ratings.drop_duplicates(subset=["episode_id"], inplace=True)
     ratings.reset_index(drop=True, inplace=True)
 
-    print(f"Ratings generados: {len(ratings)}")
+    # ── Normalización MinMax [0, 1] de columnas numéricas ─────────────────────
+    cols_normalizar = ["viewers_millions", "imdb_rating", "season",
+                       "number_in_season", "duration_min"]
+    scaler = MinMaxScaler()
+    ratings[cols_normalizar] = np.round(
+        scaler.fit_transform(ratings[cols_normalizar]), 6
+    )
+
+    print(f"Ratings generados y normalizados [0,1]: {len(ratings)}")
+    print(f"  viewers_millions : [{ratings['viewers_millions'].min():.4f}, {ratings['viewers_millions'].max():.4f}]")
+    print(f"  imdb_rating      : [{ratings['imdb_rating'].min():.4f}, {ratings['imdb_rating'].max():.4f}]")
+    print(f"  season           : [{ratings['season'].min():.4f}, {ratings['season'].max():.4f}]")
     return ratings
