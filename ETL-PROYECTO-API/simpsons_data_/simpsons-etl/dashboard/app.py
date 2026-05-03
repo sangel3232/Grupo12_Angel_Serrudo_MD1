@@ -1,4 +1,4 @@
-import sys, os
+﻿import sys, os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
@@ -418,11 +418,11 @@ elif seccion == "🤖 Regresión Lineal":
         st.plotly_chart(fig_s, use_container_width=True)
 
     with col_b:
-        st.subheader("Rating real vs Rating predicho — Modelo Múltiple")
+        st.subheader("Rating real vs Rating Predicción — Modelo Múltiple")
         st.caption("Puntos sobre la línea roja = predicción perfecta")
         fig_m = px.scatter(
             x=y_test, y=y_pred_mult,
-            labels={"x": "Rating IMDB real", "y": "Rating IMDB predicho"},
+            labels={"x": "Rating IMDB real", "y": "Rating IMDB Predicción"},
             opacity=0.5, color_discrete_sequence=["#4CAF50"],
         )
         lim = [min(y_test.min(), y_pred_mult.min()), max(y_test.max(), y_pred_mult.max())]
@@ -566,7 +566,7 @@ elif seccion == "🌳 Árboles y Clasificación":
             fig.update_layout(title=met, height=300, showlegend=False, margin=dict(t=40,b=20))
             col.plotly_chart(fig, use_container_width=True)
 
-        # Gráfica real vs predicho del mejor split
+        # Gráfica real vs Predicción del mejor split
         mejor_idx = df_ar["R²"].idxmax()
         mejor_ts  = splits[mejor_idx][1]
         Xtr_b, Xte_b, ytr_b, yte_b = train_test_split(X, y_reg, test_size=mejor_ts, random_state=int(random_state))
@@ -574,9 +574,9 @@ elif seccion == "🌳 Árboles y Clasificación":
         m_best.fit(Xtr_b, ytr_b)
         yp_best = m_best.predict(Xte_b)
 
-        st.subheader(f"Real vs Predicho — Mejor split ({splits[mejor_idx][0]})")
+        st.subheader(f"Real vs Predicción — Mejor split ({splits[mejor_idx][0]})")
         fig_rv = px.scatter(x=yte_b, y=yp_best,
-            labels={"x": "Rating real", "y": "Rating predicho"},
+            labels={"x": "Rating real", "y": "Rating Predicción"},
             opacity=0.5, color_discrete_sequence=["#2196F3"])
         lim = [min(yte_b.min(), yp_best.min()), max(yte_b.max(), yp_best.max())]
         fig_rv.add_scatter(x=lim, y=lim, mode="lines",
